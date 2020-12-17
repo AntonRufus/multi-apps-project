@@ -64,13 +64,13 @@ const Timer = props => {
     //Math
     const hoursNumber = Math.floor(timeLeft / 3600);
     const hours = padTime(hoursNumber);
-    const minutesNumber = Math.floor(timeLeft / 60 - hours * 60);
-    const minutes = padTime(Math.floor(minutesNumber));
-    const secondsNumber = Math.floor(timeLeft - hours * 3600 - minutes * 60);
-    const seconds = padTime(Math.floor(secondsNumber));
+    const minutesNumber = Math.floor(timeLeft / 60 - hoursNumber * 60);
+    const minutes = padTime(minutesNumber);
+    const secondsNumber = Math.floor(timeLeft - hoursNumber * 3600 - minutesNumber * 60);
+    const seconds = padTime(secondsNumber);
 
     function sumTimer() {
-        const sum = Number(hoursLeft * 3600 - minutes * 60) + Number(minutesLeft * 60) + Number(secondsLeft);
+        const sum = Number(hoursLeft * 3600) + Number(minutesLeft * 60) + Number(secondsLeft);
         setTimeLeft(sum);
     }
 
@@ -80,16 +80,18 @@ const Timer = props => {
             <h2>{title}</h2>
             <div>
                 {!isRunning &&
-                <div>hours: <input min={0} max={23} defaultValue={hoursNumber} type="number"
+                <div>hours: <input min={'0'} max={'23'} defaultValue={hoursNumber} type="number"
                                    onChange={event => setHoursLeft(event.target.value)}/>
                 </div>}
                 {!isRunning &&
-                <div>minutes: <input min={0} max={59} defaultValue={minutesNumber} type="number"
-                                     onChange={event => setMinutesLeft(event.target.value)}/></div>}
+                <div>minutes: <input min={'0'} max={'59'} defaultValue={minutesNumber} type="number"
+                                     onChange={event => setMinutesLeft(event.target.value)}/>
+                </div>}
                 {!isRunning &&
-                <div>seconds: <input min={0} max={59} defaultValue={secondsNumber} type="number"
-                                     onChange={event => setSecondsLeft(event.target.value)}/></div>}
-                {!isRunning && <button onClick={sumTimer}>Set the timer</button>}
+                <div>seconds: <input min={'0'} max={'59'} defaultValue={secondsNumber} type="number"
+                                     onChange={event => setSecondsLeft(event.target.value)}/>
+                </div>}
+                {!isRunning && <button onClick={sumTimer}>Set / Reset</button>}
             </div>
             <div className={css.timer}>
                 <span>{hours}</span>
