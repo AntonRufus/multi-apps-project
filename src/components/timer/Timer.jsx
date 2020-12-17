@@ -2,6 +2,7 @@ import React, {useState, useRef} from "react";
 import css from "./Timer.modul.css"
 import {Route} from "react-router-dom";
 import App from "../../App";
+import {useAlert} from "react-alert";
 
 function padTime(time) {
     return time.toString().padStart(2, '0');
@@ -19,6 +20,8 @@ const Timer = props => {
     const [isRunning, setIsRunning] = useState(false);
     const intervalRef = useRef(null);
 
+    const alert = useAlert();
+
     //Start timer function
     function startTimer() {
         if (intervalRef.current !== null) return;
@@ -30,7 +33,7 @@ const Timer = props => {
 
                 //reset the timer
                 resetTimer();
-                alert('Time is over'); // why 2 times????
+                alert.show('Time is over'); // why 2 times????
                 return 0;
             });
         }, 1000);
