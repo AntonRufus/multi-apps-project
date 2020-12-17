@@ -1,7 +1,7 @@
 import React, {useState, useRef} from "react";
-import css from "./components/pomodoro_timer/PomodoroTimer.modul.css"
+import css from "./Timer.modul.css"
 import {Route} from "react-router-dom";
-import App from "./App";
+import App from "../../App";
 
 function padTime(time) {
     return time.toString().padStart(2, '0');
