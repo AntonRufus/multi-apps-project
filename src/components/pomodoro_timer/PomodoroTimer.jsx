@@ -2,17 +2,20 @@ import React, {useState, useRef} from "react";
 import css from "./PomodoroTimer.modul.css"
 import {Route} from "react-router-dom";
 import App from "../../App";
+import {useAlert} from "react-alert";
 
-function padTime(time) {
+const padTime = time => {
     return time.toString().padStart(2, '0');
 }
 
 const PomodoroTimer = props => {
     //Hooks
     const [title, setTitle] = useState('Let the countdown begin!');
-    const [timeLeft, setTimeLeft] = useState(0 * 60);
+    const [timeLeft, setTimeLeft] = useState(25 * 60);
     const [isRunning, setIsRunning] = useState(false);
     const intervalRef = useRef(null);
+
+    const alert = useAlert();
 
     //Start timer function
     function startTimer() {
@@ -25,7 +28,7 @@ const PomodoroTimer = props => {
 
                 //reset the timer
                 resetTimer();
-                alert('Time is over'); // why 2 times????
+                alert.show('Time is over'); // why 2 times???
                 return 0;
             });
         }, 1000);
@@ -47,7 +50,7 @@ const PomodoroTimer = props => {
         clearInterval(intervalRef.current);
         intervalRef.current = null;
         setIsRunning(false);
-        setTimeLeft(0 * 60);
+        setTimeLeft(25 * 60);
     }
 
     //Math
@@ -59,9 +62,8 @@ const PomodoroTimer = props => {
             <Route exact path='/home' render={() => <App/>}/>
             <h2>{title}</h2>
             <div>
-                {/*avoid negative numbers*/}
-                {!isRunning &&
-                <input defaultValue={timeLeft} onChange={event => setTimeLeft(event.target.value)} type="number"/>}
+                {!isRunning && <input min={'0'} max={'1500'} value={timeLeft} type="number"
+                                      onChange={event => setTimeLeft(event.target.value)}/>}
             </div>
             <div className={css.timer}>
                 <span>{minutes}</span>

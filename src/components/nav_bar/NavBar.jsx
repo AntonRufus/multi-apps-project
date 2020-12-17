@@ -11,6 +11,8 @@ function NavBar() {
             <hr/>
             <NavLink to='/markdown_editor'>Markdown Editor</NavLink>
             <hr/>
+            <NavLink to='/test'>Timer</NavLink>
+            <hr/>
         </div>
     );
 }

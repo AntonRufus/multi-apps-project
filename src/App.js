@@ -4,6 +4,7 @@ import {Redirect, Route} from "react-router-dom";
 import NavBar from "./components/nav_bar/NavBar";
 import PomodoroTimer from "./components/pomodoro_timer/PomodoroTimer";
 import MarkdownEditor from "./components/markdown_editor/MarkdownEditor";
+import Timer from "./Timer";
 
 function App(props) {
     return (
@@ -17,6 +18,7 @@ function App(props) {
                 <Route exact path='/pomodoro_timer' render={() => <PomodoroTimer/>}/>
                 <Route exact path='/markdown_editor'
                        render={() => <MarkdownEditor some={'APP:'}>Markdown Editor</MarkdownEditor>}/>
+                <Route exact path='/test' render={() => <Timer/>}/>
             </div>
         </div>
     );
