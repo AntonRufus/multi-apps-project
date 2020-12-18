@@ -1,20 +1,16 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import {NavCreator} from "../creators/Creator";
 
 const NavBar = () => {
-    return (
-        <div>
-            <hr/>
-            <NavLink to='/home'>Home page</NavLink>
-            <hr/>
-            <NavLink to='/pomodoro_timer'>Pomodoro Timer </NavLink>
-            <hr/>
-            <NavLink to='/timer'>Timer</NavLink>
-            <hr/>
-            <NavLink to='/markdown_editor'>Markdown Editor</NavLink>
-            <hr/>
-        </div>
-    );
+    return <div>
+        <NavCreator     to={'/home'}                title={'Home page'}/>
+        <NavCreator     to={'/pomodoro_timer'}      title={'Pomodoro Timer'}/>
+        <NavCreator     to={'/just_timer'}          title={'Just Timer'}/>
+        <NavCreator     to={'/markdown_editor'}     title={'Markdown Editor'}/>
+        <NavCreator     to={'/browser_tabs'}        title={'Browser Tabs'}/>
+
+        <hr/>
+    </div>
 }
 
 export default NavBar;
