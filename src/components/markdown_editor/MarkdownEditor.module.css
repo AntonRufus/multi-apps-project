@@ -1,15 +1,20 @@
 .wrapper {
     font-size: 100%;
     color: wheat;
-    display: flex;
+    /*display: flex;*/
+}
+
+.instructions {
+    font-size: 1vmax;
 }
 
 textarea {
-    height: 40vmax;
+    height: 30vmax;
     width: 30vmax;
 }
 
 .preview {
+    margin-left: 2vmax;
     display: inline-block;
     float: right;
     max-width: 30vmax;
@@ -18,7 +23,7 @@ textarea {
 blockquote {
     background: #444d58;
     border-radius: 5px;
-    border-left: 1px solid #2db6f6;
+    border-left: 3px solid #2db6f6;
     font-weight: bold;
     padding: 0 10px;
     text-decoration: underline;
@@ -26,7 +31,8 @@ blockquote {
 }
 
 ul li {
-    background: #444d58;
+    background: #313438;
+    border-left: 3px solid #ce16f8;
     padding: 7px 10px;
     min-width: 5px;
     max-width: 40vmax;

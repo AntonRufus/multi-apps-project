@@ -5,6 +5,8 @@ import NavBar from "./components/nav_bar/NavBar";
 import PomodoroTimer from "./components/pomodoro_timer/PomodoroTimer";
 import MarkdownEditor from "./components/markdown_editor/MarkdownEditor";
 import Timer from "./components/timer/Timer.jsx";
+import JustTimer from "./components/timer/JustTimer";
+import BrowserTabs from "./components/browser_tabs/BrowserTabs";
 
 function App(props) {
     return (
@@ -16,8 +18,9 @@ function App(props) {
                 <Route exact path='/' render={() => <Redirect to={'/home'}/>}/>
                 <Route exact path='/home' render={() => props.hi}/>
                 <Route exact path='/pomodoro_timer' render={() => <PomodoroTimer/>}/>
-                <Route exact path='/timer' render={() => <Timer/>}/>
+                <Route exact path='/timer' render={() => <JustTimer/>}/>
                 <Route exact path='/markdown_editor' render={() => <MarkdownEditor/>}/>
+                <Route exact path='/browser_tabs' render={() => <BrowserTabs/>}/>
             </div>
         </div>
     );
