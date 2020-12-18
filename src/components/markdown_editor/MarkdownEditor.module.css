@@ -1,0 +1,33 @@
+.wrapper {
+    font-size: 100%;
+    color: wheat;
+    display: flex;
+}
+
+textarea {
+    height: 40vmax;
+    width: 30vmax;
+}
+
+.preview {
+    display: inline-block;
+    float: right;
+    max-width: 30vmax;
+}
+
+blockquote {
+    background: #444d58;
+    border-radius: 5px;
+    border-left: 1px solid #2db6f6;
+    font-weight: bold;
+    padding: 0 10px;
+    text-decoration: underline;
+    max-width: 40vmax;
+}
+
+ul li {
+    background: #444d58;
+    padding: 7px 10px;
+    min-width: 5px;
+    max-width: 40vmax;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+    font-size: 100%;
+    color: wheat;
+}
+
+.timer {
+    margin: 25px;
+    padding: 25px;
+}
+
+.buttons {
+    padding: 25px;
+    margin: 25px;
+}

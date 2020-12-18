@@ -1,14 +1,12 @@
 import React, {useState, useRef} from "react";
-import css from "./PomodoroTimer.modul.css"
-import {Route} from "react-router-dom";
-import App from "../../App";
+import css from "./PomodoroTimer.module.css"
 import {useAlert} from "react-alert";
 
 const padTime = time => {
     return time.toString().padStart(2, '0');
 }
 
-const PomodoroTimer = props => {
+const PomodoroTimer = () => {
     //Hooks
     const [title, setTitle] = useState('Let the countdown begin!');
     const [timeLeft, setTimeLeft] = useState(25 * 60);
@@ -59,7 +57,6 @@ const PomodoroTimer = props => {
 
     return (
         <div className={css.wrapper}>
-            <Route exact path='/home' render={() => <App/>}/>
             <h2>{title}</h2>
             <div>
                 {!isRunning && <input min={'0'} max={'1500'} value={timeLeft} type="number"

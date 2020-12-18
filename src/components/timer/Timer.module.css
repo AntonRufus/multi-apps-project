@@ -1,0 +1,16 @@
+.wrapper {
+    font-size: 100%;
+    color: wheat;
+}
+
+.timer {
+    margin: 25px;
+}
+
+.buttons {
+    margin: 25px;
+}
+
+input {
+    margin: 25px;
+}

@@ -1,14 +1,12 @@
 import React, {useState, useRef} from "react";
-import css from "./Timer.modul.css"
-import {Route} from "react-router-dom";
-import App from "../../App";
+import css from "./Timer.module.css"
 import {useAlert} from "react-alert";
 
-function padTime(time) {
+const padTime = time => {
     return time.toString().padStart(2, '0');
 }
 
-const Timer = props => {
+const Timer = () => {
     //Hooks
     const [title, setTitle] = useState('Timer is ready to go!');
     const [timeLeft, setTimeLeft] = useState(0);
@@ -76,7 +74,6 @@ const Timer = props => {
 
     return (
         <div className={css.wrapper}>
-            <Route exact path='/home' render={() => <App/>}/>
             <h2>{title}</h2>
             <div>
                 {!isRunning &&

@@ -1,13 +1,24 @@
-import React from "react";
-import css from "./MarkdownEditor.modul.css"
-import {Route} from "react-router-dom";
-import App from "../../App";
+import React, {useState} from "react";
+// import marked from "marked/lib/marked.esm";
+// import marked_1 from "marked/lib/marked.esm";
+import ReactMarkdown from "react-markdown";
+import css from "./MarkdownEditor.module.css";
 
-const MarkdownEditor = props => {
+const MarkdownEditor = () => {
+    const [markdown, setMarkdown] = useState('# sup');
+
+    const handleChange = (e) => {
+        setMarkdown(e.target.value)
+    }
+
     return (<div className={css.wrapper}>
-        <Route exact path='/' render={() => <App/>}/>
-        <div>{props.some}</div>
-        <p>{props.children}</p>
+        <textarea onChange={handleChange} value={markdown}/>
+
+        {/*<div className={css.preview} dangerouslySetInnerHTML={{__html: marked(markdown)}}/>*/}
+        {/*<div className={css.preview} dangerouslySetInnerHTML={{__html: marked_1(markdown)}}/>*/}
+
+        <ReactMarkdown className="preview" source={markdown}/>
     </div>)
 };
+
 export default MarkdownEditor;

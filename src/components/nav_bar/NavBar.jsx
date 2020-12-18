@@ -1,7 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 
-function NavBar() {
+const NavBar = () => {
     return (
         <div>
             <hr/>
@@ -9,9 +9,9 @@ function NavBar() {
             <hr/>
             <NavLink to='/pomodoro_timer'>Pomodoro Timer </NavLink>
             <hr/>
-            <NavLink to='/markdown_editor'>Markdown Editor</NavLink>
-            <hr/>
             <NavLink to='/timer'>Timer</NavLink>
+            <hr/>
+            <NavLink to='/markdown_editor'>Markdown Editor</NavLink>
             <hr/>
         </div>
     );

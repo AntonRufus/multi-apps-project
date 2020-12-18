@@ -16,9 +16,8 @@ function App(props) {
                 <Route exact path='/' render={() => <Redirect to={'/home'}/>}/>
                 <Route exact path='/home' render={() => props.hi}/>
                 <Route exact path='/pomodoro_timer' render={() => <PomodoroTimer/>}/>
-                <Route exact path='/markdown_editor'
-                       render={() => <MarkdownEditor some={'APP:'}>Markdown Editor</MarkdownEditor>}/>
                 <Route exact path='/timer' render={() => <Timer/>}/>
+                <Route exact path='/markdown_editor' render={() => <MarkdownEditor/>}/>
             </div>
         </div>
     );
