@@ -4,7 +4,7 @@ import {Redirect, Route} from "react-router-dom";
 import NavBar from "./components/nav_bar/NavBar";
 import PomodoroTimer from "./components/pomodoro_timer/PomodoroTimer";
 import MarkdownEditor from "./components/markdown_editor/MarkdownEditor";
-import Timer from "./components/timer/Timer.jsx";
+// import Timer from "./components/timer/Timer.jsx";
 import JustTimer from "./components/timer/JustTimer";
 import BrowserTabs from "./components/browser_tabs/BrowserTabs";
 
