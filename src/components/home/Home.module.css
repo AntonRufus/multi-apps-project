@@ -1,8 +1,8 @@
 .home {
     font-size: 4vmax;
-    transition-duration:0.7s;
+    transition-duration: 0.7s;
     text-align: center;
-    padding: 23vmax;
+    padding: 22vmax;
 }
 
 .home:hover {

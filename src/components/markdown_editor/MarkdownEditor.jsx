@@ -11,18 +11,20 @@ const MarkdownEditor = () => {
         setMarkdown(e.target.value)
     }
 
-    return (<div className={css.wrapper}>
-        <div className={css.instructions}>
-            <div>use '>' for `blockquote`, 'double Enter' for paragraph and '-' for `list`</div>
-            <hr/>
+    return (
+        <div className={css.wrapper}>
+            <div className={css.instructions}>
+                <div>use '>' for `blockquote`, 'double Enter' for paragraph and '-' for `list`</div>
+                <hr/>
+            </div>
+            <textarea onChange={handleChange} value={markdown}/>
+
+            {/*<div className={css.preview} dangerouslySetInnerHTML={{__html: marked(markdown)}}/>*/}
+            {/*<div className={css.preview} dangerouslySetInnerHTML={{__html: marked_1(markdown)}}/>*/}
+
+            <ReactMarkdown className={css.preview} source={markdown}/>
         </div>
-        <textarea onChange={handleChange} value={markdown}/>
-
-        {/*<div className={css.preview} dangerouslySetInnerHTML={{__html: marked(markdown)}}/>*/}
-        {/*<div className={css.preview} dangerouslySetInnerHTML={{__html: marked_1(markdown)}}/>*/}
-
-        <ReactMarkdown className={css.preview} source={markdown}/>
-    </div>)
+    )
 };
 
 export default MarkdownEditor;

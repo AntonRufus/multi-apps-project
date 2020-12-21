@@ -5,7 +5,7 @@ import App from './App';
 import {Provider as AlertProvider} from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
 import reportWebVitals from './reportWebVitals';
-import {HashRouter} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 
 const options = {
     position: 'bottom center',
@@ -16,11 +16,11 @@ const options = {
 
 ReactDOM.render(
     <React.StrictMode>
-        <HashRouter>
+        <BrowserRouter>
             <AlertProvider template={AlertTemplate} {...options}>
                 <App/>
             </AlertProvider>
-        </HashRouter>
+        </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
 );
