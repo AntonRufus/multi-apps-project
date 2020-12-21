@@ -80,21 +80,28 @@ const JustTimer = () => {
     return (
         <div className={css.wrapper}>
             <h2>{title}</h2>
-            <div>
-                {!isShowing &&
-                <div>hours: <input min={'0'} max={'23'} defaultValue={hoursNumber} type="number"
-                                   onChange={event => setHoursLeft(event.target.value)}/>
-                </div>}
-                {!isShowing &&
-                <div>minutes: <input min={'0'} max={'59'} defaultValue={minutesNumber} type="number"
-                                     onChange={event => setMinutesLeft(event.target.value)}/>
-                </div>}
-                {!isShowing &&
-                <div>seconds: <input min={'0'} max={'59'} defaultValue={secondsNumber} type="number"
-                                     onChange={event => setSecondsLeft(event.target.value)}/>
-                </div>}
-                {!isShowing && <button onClick={sumTimer}>Set / Reset</button>}
-            </div>
+            {!isShowing &&
+            <div className={css.inputBlock}>
+                <div className={css.timeSet}>
+                    <span>hours: </span>
+                    <input min={'0'} max={'23'}
+                           defaultValue={hoursNumber} type="number"
+                           onChange={event => setHoursLeft(event.target.value)}/>
+                </div>
+                <div className={css.timeSet}>
+                    <span>minutes: </span>
+                    <input min={'0'} max={'59'}
+                           defaultValue={minutesNumber} type="number"
+                           onChange={event => setMinutesLeft(event.target.value)}/>
+                </div>
+                <div className={css.timeSet}>
+                    <span>seconds: </span>
+                    <input min={'0'} max={'59'}
+                           defaultValue={secondsNumber} type="number"
+                           onChange={event => setSecondsLeft(event.target.value)}/>
+                </div>
+                <button className={css.buttonSum} onClick={sumTimer}>Set / Reset</button>
+            </div>}
             <div className={css.timer}>
                 <span>{hours}</span>
                 <span>:</span>

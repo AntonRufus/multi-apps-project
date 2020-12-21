@@ -1,16 +1,89 @@
 .wrapper {
-    font-size: 100%;
-    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ce7e15;
+    padding: 5vmax;
+    border-radius: 10px;
+    transition-duration: 0.7s;
 }
 
-.timer {
-    margin: 25px;
+.wrapper:hover {
+    background-color: #1f403d;
 }
 
-.buttons {
-    margin: 25px;
+h2 {
+    color: #33c799;
+    font-size: 3vmax;
+    text-align: center;
+    margin: 0;
 }
 
 input {
-    margin: 25px;
+    background-color: #acacac;
+    border: 2px solid #ebebeb;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 1.5vmax;
+    margin: 1vmax 1vmax 1vmax 40px;
+}
+
+.timer {
+    margin: 5vmax;
+    padding: 0;
+    color: #3eadce;
+    font-size: 9vmax;
+}
+
+.buttons button {
+    margin: 1vmax;
+    outline: none;
+    border: none;
+    font-size: 1.5vmax;
+    background: #f7fca0;
+    color: #878b32;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.buttons button:hover, .buttonSum:hover {
+    border-radius: 10px;
+    background: #f5f8ca;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.buttons button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.timeSetBlock {
+    position: center;
+    display: block;
+    max-width: 25vmax;
+}
+
+.timeSet {
+    display: grid;
+    grid-template-rows: 4vmax 1vmax;
+    grid-template-columns: 8vmax 15vmax;
+}
+
+.timeSet span {
+    margin: 1vmax;
+    padding: 0.2vmax;
+    font-size: 1.7vmax;
+}
+
+.buttonSum {
+    margin-left: 7vmax;
+    font-size: 1.7vmax;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    background-color: #d4d4d4;
+    transition-duration: 0.5s;
 }
