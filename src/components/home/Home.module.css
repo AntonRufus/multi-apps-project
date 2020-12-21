@@ -1,0 +1,13 @@
+.home {
+    font-size: 4vmax;
+    transition-duration:0.7s;
+    text-align: center;
+    padding: 23vmax;
+}
+
+.home:hover {
+    background-color: #3a3b47;
+    border-radius: 10px;
+    font-size: 6vmax;
+    padding: 9vmax;
+}
