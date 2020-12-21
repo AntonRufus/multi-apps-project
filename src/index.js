@@ -10,7 +10,7 @@ import {HashRouter} from "react-router-dom";
 const options = {
     position: 'bottom center',
     timeout: 5000,
-    offset: '30px',
+    offset: '1px',
     transition: 'scale'
 }
 
@@ -18,7 +18,7 @@ ReactDOM.render(
     <React.StrictMode>
         <HashRouter>
             <AlertProvider template={AlertTemplate} {...options}>
-                <App hi={'Hi There!'}/>
+                <App/>
             </AlertProvider>
         </HashRouter>
     </React.StrictMode>,

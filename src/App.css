@@ -17,6 +17,11 @@
     margin: 25px;
 }
 
+.Nav_bar a:hover {
+    transition-duration: 0.5s;
+    color: gold;
+}
+
 .content {
     margin: 0 auto;
 }
