@@ -58,7 +58,7 @@ const PomodoroTimer = () => {
     return (
         <div className={css.wrapper}>
             <h2>{title}</h2>
-            <div>
+            <div  className={css.input}>
                 {!isRunning && <input min={'0'} max={'1500'} value={timeLeft} type="number"
                                       onChange={event => setTimeLeft(event.target.value)}/>}
             </div>

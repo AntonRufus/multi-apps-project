@@ -1,14 +1,64 @@
 .wrapper {
-    font-size: 100%;
-    color: wheat;
+    padding: 12vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ce7e15;
+    border-radius: 10px;
+    transition-duration: 0.7s;
+}
+
+.wrapper:hover {
+    background-color: #253130;
+}
+
+h2 {
+    color: #33c799;
+    font-size: 3vmax;
+    text-align: center;
+    margin: 0;
+}
+
+.input {
+    height: 3vmax;
+}
+
+.input input {
+    background-color: #acacac;
+    border: 2px solid #ebebeb;
+    border-radius: 5px;
+    padding-left: 5px;
 }
 
 .timer {
-    margin: 25px;
-    padding: 25px;
+    margin: 5vmax;
+    padding: 0;
+    color: #3eadce;
+    font-size: 9vmax;
 }
 
-.buttons {
-    padding: 25px;
-    margin: 25px;
+.buttons button {
+    margin: 1vmax;
+    outline: none;
+    border: none;
+    font-size: 1.5vmax;
+    background: #f7fca0;
+    color: #878b32;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.buttons button:hover {
+    border-radius: 10px;
+    background: #f5f8ca;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.buttons button:not(:last-child) {
+    margin-right: 10px;
 }
