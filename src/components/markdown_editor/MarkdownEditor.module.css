@@ -3,6 +3,7 @@
     color: wheat;
     padding: 4vmax;
     min-height: 95vh;
+    min-width: 65vmax;
     border-radius: 10px;
     transition-duration: 0.7s;
 }
@@ -23,7 +24,7 @@
 }
 
 textarea {
-    height: 30vmax;
+    height: 35vmax;
     width: 30vmax;
     background: #eff1f5;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -37,6 +38,8 @@ textarea {
     margin-left: 2vmax;
     display: inline-block;
     float: right;
+    padding-right: 222px;
+    padding-top: 15px;
     max-width: 30vmax;
 }
 
