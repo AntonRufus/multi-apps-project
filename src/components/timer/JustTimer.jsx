@@ -2,9 +2,7 @@ import React, {useState, useRef} from "react";
 import css from "./JustTimer.module.css"
 import {useAlert} from "react-alert";
 
-const padTime = time => {
-    return time.toString().padStart(2, '0');
-}
+const padTime = time => time.toString().padStart(2, '0');
 
 const JustTimer = () => {
     //Hooks

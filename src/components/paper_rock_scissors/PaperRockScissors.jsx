@@ -4,8 +4,8 @@ import Paper from "./icons/Paper";
 import Rock from "./icons/Rock";
 import Scissors from "./icons/Scissors";
 
-const PaperRockScissors = () => {
-    return <div className={css.wrapper}>
+const PaperRockScissors = () =>
+    <div className={css.wrapper}>
         {/* information goes here */}
         <div className={css.info}>
             <h2>Rock. Paper. Scissors</h2>
@@ -54,6 +54,5 @@ const PaperRockScissors = () => {
             </div>
         </div>
     </div>
-}
 
 export default PaperRockScissors;
