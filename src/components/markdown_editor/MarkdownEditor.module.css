@@ -2,6 +2,7 @@
     font-size: 100%;
     color: wheat;
     padding: 4vmax;
+    min-height: 95vh;
     border-radius: 10px;
     transition-duration: 0.7s;
 }
