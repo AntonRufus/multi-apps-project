@@ -25,3 +25,12 @@
 .content {
     margin: 0 auto;
 }
+
+@media (max-width: 1000px) {
+    .content {
+        margin: 0;
+        min-width: 25vmax;
+    }.Nav_bar {
+         margin: 0;
+     }
+}

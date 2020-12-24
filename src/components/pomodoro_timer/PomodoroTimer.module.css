@@ -64,3 +64,12 @@ h2 {
 .buttons button:not(:last-child) {
     margin-right: 10px;
 }
+
+@media (max-width: 1000px) {
+    .wrapper {
+        margin: 1vmax;
+        min-width: 35vmax;
+        min-height: 65vh;
+        padding: 0;
+    }
+}

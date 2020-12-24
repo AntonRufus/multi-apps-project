@@ -60,3 +60,67 @@ ul li {
     min-width: 5px;
     max-width: 40vmax;
 }
+
+@media (max-width: 1600px) {
+    .wrapper {
+        padding-top: 16vmax;
+    }
+}
+
+@media (max-width: 1450px) {
+    .preview {
+        padding-right: 122px;
+    }
+
+    .wrapper {
+        padding-top: 15vmax;
+    }
+}
+
+@media (max-width: 1250px) {
+    .wrapper {
+        padding-top: 15vmax;
+        min-width: 35vmax;
+    }
+
+    .preview {
+        padding-right: 22px;
+    }
+
+    .preview h1 {
+        font-size: 2vmax;
+    }
+
+    textarea {
+        font-size: 2vmax;
+        width: 15vmax;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        padding-top: 25vmax;
+        min-width: 20vmax;
+    }
+
+    .preview {
+        padding-left: 0;
+        margin-left: 5px;
+    }
+
+    textarea {
+        font-size: 1.5vmax;
+        width: 15vmax;
+        padding: 5px;
+    }
+
+    .instructions {
+        font-size: 0.5vmax;
+    }
+
+    .preview h1 {
+        padding-left: 2px;
+        padding-right: 0;
+        font-size: 1.5vmax;
+    }
+}

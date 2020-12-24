@@ -20,6 +20,16 @@ const Home = () => {
         background-color: ${backgroundColor};
         font-size: ${fontSize};
         padding: ${padding};
+        @media (max-width: 1200px) {
+        margin: 1vmax;
+        font-size:  3vmax;
+        padding: 10vmax;
+        }
+        @media (max-width: 905px) {
+        margin: 1vmax;
+        font-size:  3vmax;
+        padding: 10vmax;
+        }
 `;
 
     return <div className={newStyle}>

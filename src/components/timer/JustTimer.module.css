@@ -89,3 +89,17 @@ input {
     background-color: #d4d4d4;
     transition-duration: 0.5s;
 }
+
+@media (max-width: 1000px) {
+    .wrapper {
+        margin: 1vmax;
+        min-width: 25vmax;
+        min-height: 65vh;
+        padding: 0;
+    }
+    .timer {
+        margin-left: 3vmax;
+        margin-right: 3vmax;
+        font-size: 7vmax;
+    }
+}
