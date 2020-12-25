@@ -97,9 +97,41 @@ input {
         min-height: 65vh;
         padding: 0;
     }
+
     .timer {
         margin-left: 3vmax;
         margin-right: 3vmax;
         font-size: 7vmax;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        margin: 1vmax;
+        min-width: 25vmax;
+        min-height: 45vh;
+        padding: 0;
+    }
+
+    .timer {
+        margin-left: 2vmax;
+        margin-right: 2vmax;
+        font-size: 5vmax;
+    }
+
+    .wrapper h2 {
+        font-size: 2vmax;
+    }
+
+    .buttons button {
+        font-size: 2vmax;
+        padding: 10px 20px;
+    }
+
+    input {
+        border-radius: 5px;
+        padding-left: 5px;
+        font-size: 1.5vmax;
+        margin: 0.5vmax 0.5vmax 0.5vmax 40px;
     }
 }

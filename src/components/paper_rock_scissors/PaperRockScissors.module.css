@@ -244,9 +244,10 @@ h6 {
 @media (max-width: 1220px) {
     .wrapper {
         min-width: 40vmax;
-        min-height: 75vh;
+        min-height: 65vh;
         padding: 2vmax;
-        margin-top: 5vmax;
+        padding-top: 10vmax;
+        margin-top: 10vmax;
     }
 
     .choices {
@@ -286,9 +287,11 @@ h6 {
 @media (max-width: 1000px) {
     .wrapper {
         min-width: 35vmax;
+        min-height: 50vh;
         padding-left: 1vmax;
         padding-right: 1vmax;
-        padding-top: 20vmax;
+        padding-top: 10vmax;
+        margin-top: 5vmax;
     }
 
     .choices button {
@@ -331,5 +334,17 @@ h6 {
 
     .wins {
         margin-right: 1px;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        min-width: 30vmax;
+        min-height: 35vh;
+        padding: 2vmax;
+    }
+
+    .choices {
+        margin-bottom: 15px;
     }
 }

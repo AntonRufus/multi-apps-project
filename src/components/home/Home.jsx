@@ -26,9 +26,10 @@ const Home = () => {
         padding: 10vmax;
         }
         @media (max-width: 905px) {
-        margin: 1vmax;
-        font-size:  3vmax;
-        padding: 10vmax;
+        padding: 8vmax;
+        }
+        @media (max-width: 605px) {
+        padding: 5vmax;
         }
 `;
 

@@ -15,7 +15,7 @@
     background-color: #25524d;
 }
 
-h2 {
+.wrapper h2 {
     color: #33c799;
     font-size: 3vmax;
     text-align: center;
@@ -71,5 +71,31 @@ h2 {
         min-width: 35vmax;
         min-height: 65vh;
         padding: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        margin: 1vmax;
+        min-width: 25vmax;
+        min-height: 45vh;
+        padding: 0;
+    }
+
+    .wrapper h2 {
+        font-size: 2vmax;
+    }
+
+    .timer {
+        margin: 4vmax;
+        padding: 0;
+        color: #3eadce;
+        font-size: 6vmax;
+    }
+
+    .buttons button {
+        margin: 1vmax;
+        font-size: 2vmax;
+        padding: 10px 20px;
     }
 }

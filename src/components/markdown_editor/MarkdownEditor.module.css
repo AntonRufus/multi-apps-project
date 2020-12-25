@@ -6,6 +6,7 @@
     min-width: 65vmax;
     border-radius: 10px;
     transition-duration: 0.7s;
+    margin-left: 1vmax;
 }
 
 .wrapper:hover {
@@ -79,8 +80,11 @@ ul li {
 
 @media (max-width: 1250px) {
     .wrapper {
-        padding-top: 15vmax;
+        padding: 3vmax;
+        padding-top: 5vmax;
         min-width: 35vmax;
+        min-height: 65vh;
+        margin-left: 1vmax;
     }
 
     .preview {
@@ -99,8 +103,11 @@ ul li {
 
 @media (max-width: 900px) {
     .wrapper {
-        padding-top: 25vmax;
-        min-width: 20vmax;
+        padding: 2vmax;
+        padding-top: 1vmax;
+        min-width: 35vmax;
+        min-height: 45vh;
+        margin-left: 1vmax;
     }
 
     .preview {
