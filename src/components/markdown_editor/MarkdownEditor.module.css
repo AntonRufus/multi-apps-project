@@ -101,11 +101,11 @@ ul li {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .wrapper {
         padding: 2vmax;
         padding-top: 1vmax;
-        min-width: 35vmax;
+        min-width: 30vmax;
         min-height: 45vh;
         margin-left: 1vmax;
     }
@@ -129,5 +129,11 @@ ul li {
         padding-left: 2px;
         padding-right: 0;
         font-size: 1.5vmax;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        padding: 1vmax;
     }
 }
