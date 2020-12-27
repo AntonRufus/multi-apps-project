@@ -243,9 +243,9 @@ h6 {
 
 @media (max-width: 1220px) {
     .wrapper {
-        min-width: 40vmax;
-        min-height: 65vh;
-        padding: 2vmax;
+        min-width: 35vmax;
+        min-height: 55vh;
+        padding: 1vmax;
         padding-top: 10vmax;
         margin-top: 10vmax;
     }
@@ -282,11 +282,22 @@ h6 {
         align-items: center;
         margin-bottom: 10px;
     }
+
+    .info h2 {
+        font-size: 1.7vmax;
+        padding-right: 10px;
+    }
+
+    .wins .text,
+    .losses .text {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
 }
 
 @media (max-width: 1000px) {
     .wrapper {
-        min-width: 35vmax;
+        min-width: 33vmax;
         min-height: 50vh;
         padding-left: 1vmax;
         padding-right: 1vmax;
