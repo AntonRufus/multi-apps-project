@@ -160,6 +160,7 @@ h6 {
     fill: #bbb;
 }
 
+/*
 .game_state {
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -170,7 +171,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 6vmax;
     line-height: 1.3;
     font-family: 'Varela Round', sans-serif;
 }
@@ -209,12 +210,13 @@ h6 {
     border-radius: 10px;
     z-index: 1;
     color: #fff;
-    font-size: 60px;
+    font-size: 6vmax;
 }
 
 .game_state_content {
     display: flex;
     justify-content: center;
+    margin-left: 22vmax;
 }
 
 .game_state_content p {
@@ -240,6 +242,7 @@ h6 {
     background: #fa65ff;
     color: #fdedfd;
 }
+*/
 
 @media (max-width: 1220px) {
     .wrapper {
@@ -293,6 +296,12 @@ h6 {
         margin-left: 3px;
         margin-right: 3px;
     }
+
+    /*
+    .game_state_content {
+        margin-left: 25vmax;
+    }
+    */
 }
 
 @media (max-width: 1000px) {
@@ -346,7 +355,45 @@ h6 {
     .wins {
         margin-right: 1px;
     }
+
+    /*
+    .game_state_content {
+        margin-left: -25vmax;
+    }
+
+    .game_state_content p {
+        margin: 0;
+        padding: 0;
+        font-size: 5vmax;
+    }
+
+    .game_state > div {
+        width: 25%;
+        padding: 0;
+        margin: 0;
+    }
+    */
 }
+
+/*
+@media (max-width: 950px) {
+    .game_state_content {
+        margin-left: -23vmax;
+    }
+}
+
+@media (max-width: 900px) {
+    .game_state_content {
+        margin-left: -19vmax;
+    }
+}
+
+@media (max-width: 850px) {
+    .game_state_content {
+        margin-left: -15vmax;
+    }
+}
+*/
 
 @media (max-width: 800px) {
     .wrapper {
@@ -358,4 +405,36 @@ h6 {
     .choices {
         margin-bottom: 15px;
     }
+
+    /*
+    .game_state_content {
+        margin-left: -22vmax;
+        padding: 0;
+        !*width: 25%;*!
+    }
+
+    .game_state_content p {
+        font-size: 4vmax;
+    }
+    */
 }
+
+/*
+@media (max-width: 740px) {
+    .game_state_content {
+        margin-left: -15vmax;
+    }
+}
+
+@media (max-width: 670px) {
+    .game_state_content {
+        margin-left: -10vmax;
+    }
+}
+
+@media (max-width: 630px) {
+    .game_state_content {
+        margin-left: -5vmax;
+    }
+}
+*/

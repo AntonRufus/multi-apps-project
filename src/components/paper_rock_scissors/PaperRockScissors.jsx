@@ -3,6 +3,7 @@ import css from "./PaperRockScissors.module.css"
 import Paper from "./icons/Paper";
 import Rock from "./icons/Rock";
 import Scissors from "./icons/Scissors";
+import "./winLoseDraw.css";
 
 const choices = [
     {id: 1, name: 'rock', component: Rock},
@@ -15,8 +16,11 @@ const choices = [
 // 3. reset the game
 
 const PaperRockScissors = () => {
+    const [wins, setWins] = useState(0);
+    const [losses, setLosses] = useState(0);
     const [userChoice, setUserChoice] = useState(null);
     const [computerChoice, setComputerChoice] = useState(null);
+    const [gameState, setGameState] = useState(null); //win, lose, draw
 
     useEffect(() => {
         const randomChoice = choices[Math.floor(Math.random() * choices.length)];
@@ -26,6 +30,14 @@ const PaperRockScissors = () => {
     const handleUserChoice = (choice) => {
         const chosenChoice = choices.find(c => c.id === choice);
         setUserChoice(chosenChoice);
+
+        // determine the winner
+        setGameState('win');
+    }
+
+    const renderComponent = (choice) => {
+        const Component = choice.component;     // Paper, Rock, Scissors
+        return <Component/>
     }
 
     return (
@@ -37,19 +49,29 @@ const PaperRockScissors = () => {
                 {/* wins vs losses stats */}
                 <div className={css.wins_losses}>
                     <div className={css.wins}>
-                        <span className={css.number}>0</span>
-                        <span className={css.text}>Wins</span>
+                        <span className={css.number}>{wins}</span>
+                        <span className={css.text}>{wins === 1 ? 'Win' : 'Wins'}</span>
                     </div>
 
                     <div className={css.losses}>
-                        <span className={css.number}>0</span>
-                        <span className={css.text}>Losses</span>
+                        <span className={css.number}>{losses}</span>
+                        <span className={css.text}>{losses === 1 ? 'Loss' : 'Losses'}</span>
                     </div>
                 </div>
             </div>
 
-            {/* the popup to show win/loss/draw */}
-            {/* <div className="game-state"></div> */}
+            {/* the popup to show win/lose/draw */}
+            {gameState && (
+                <div className={`game_state ${gameState}`}>
+                    <div>
+                        <div className='game_state_content'>
+                            <p>{renderComponent(userChoice)}</p>
+                            <p>You won!</p>
+                            <p>{renderComponent(computerChoice)}</p>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             <div className={css.choices}>
                 {/* choices captions */}
