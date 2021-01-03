@@ -21,13 +21,13 @@ const PaperRockScissors = () => {
     const [draws, setDraws] = useState(0);
     const [userChoice, setUserChoice] = useState(null);
     const [computerChoice, setComputerChoice] = useState(null);
-    const [gameState, setGameState] = useState(null); //win, lose, draw
+    const [gameState, setGameState] = useState(null);       //win, lose, draw
 
     useEffect(() => {
-        const randomChoice = choices[Math.floor(Math.random() * choices.length)];
-        setComputerChoice(randomChoice);
-    }, [])
+        restartGame();
+    }, []);
 
+    // game state => choices
     const handleUserChoice = (choice) => {
         const chosenChoice = choices.find(c => c.id === choice);
         setUserChoice(chosenChoice);
@@ -46,12 +46,20 @@ const PaperRockScissors = () => {
             setDraws(draws => draws + 1)
             setGameState('draw')
         }
-    }
+    };
 
+    // render choice component  => game state
     const renderComponent = (choice) => {
         const Component = choice.component;     // Paper, Rock, Scissors
         return <Component/>
-    }
+    };
+
+    // reset the game
+    const restartGame = () => {
+        setGameState(null);
+        const randomChoice = choices[Math.floor(Math.random() * choices.length)];
+        setComputerChoice(randomChoice);
+    };
 
     return (
         <div className={css.wrapper}>
@@ -78,9 +86,11 @@ const PaperRockScissors = () => {
                 </div>
             </div>
 
-            {/* the popup to show win/lose/draw */}
+            {/* the popup to show win/lose/draw --- game state */}
             {gameState && (
-                <div className={`game_state ${gameState}`}>
+                <div className={`game_state ${gameState}`}
+                     onClick={() => restartGame()}
+                >
                     <div>
                         <div className='game_state_content'>
                             <p>{renderComponent(userChoice)}</p>
@@ -90,10 +100,12 @@ const PaperRockScissors = () => {
                             {gameState === 'draw' && <p>Oh! You drew!</p>}
                             <p>{renderComponent(computerChoice)}</p>
                         </div>
+                        <button>Play again</button>
                     </div>
                 </div>
             )}
 
+            {/* choices */}
             <div className={css.choices}>
                 {/* choices captions */}
                 <div>You</div>
@@ -122,5 +134,6 @@ const PaperRockScissors = () => {
             </div>
         </div>
     )
-}
+};
+
 export default PaperRockScissors;

@@ -256,8 +256,7 @@ h6 {
     .wrapper {
         min-width: 35vmax;
         min-height: 55vh;
-        padding: 1vmax;
-        padding-top: 10vmax;
+        padding: 3vmax 1vmax 1vmax 1vmax;
         margin-top: 10vmax;
     }
 

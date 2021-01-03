@@ -48,31 +48,38 @@
     z-index: 1;
     color: #fff;
     font-size: 6vmax;
-    margin-left: 22vmax;
+    margin-left: 18vmax;
 }
 
 .game_state button {
-    margin-bottom: -5%;
+    font-size: 30px;
+    margin-bottom: 2%;
     width: 100%;
     display: block;
     border: none;
     border-radius: 10px;
     padding: 25px;
-    font-size: 30px;
     cursor: pointer;
     flex-shrink: 1;
     background: #fa65ff;
     color: #fdedfd;
+    box-shadow: 1px 1px #fa65ff;
+}
+
+.game_state button:hover {
+    background: radial-gradient(#691780, #820e80, #a801a5, #ff00c9, #fd58d1);
+    color: #ffffff;
+    box-shadow: 0 0 10px 1px #ff67d3;
 }
 
 .game_state_content {
     display: flex;
     justify-content: center;
-    /*margin-left: 22vmax;*/
 }
 
 .game_state_content p {
     margin: 40px 15px 30px 0;
+    font-size: 5vmax;
     display: flex;
     align-items: center;
 }
@@ -81,6 +88,11 @@
     width: 100px;
 }
 
+@media (max-width: 1450px) {
+    .game_state > div {
+        margin-left: 27vmax;
+    }
+}
 
 @media (max-width: 1220px) {
     /*.game_state_content {*/
@@ -93,14 +105,17 @@
     .game_state_content p {
         margin: 5px;
         padding: 5px;
-        font-size: 5vmax;
+        font-size: 3vmax;
+    }
+
+    .game_state button {
+        font-size: 3vmax;
     }
 
     .game_state > div {
         /*width: 25%;*/
         padding: 5px;
-        margin: 5px;
-        margin-left: 15vmax;
+        margin: 5px 5px 5px 29vmax;
     }
 }
 
@@ -111,14 +126,17 @@
     .game_state_content p {
         margin: 3px;
         padding: 3px;
-        font-size: 3vmax;
+        font-size: 2vmax;
+    }
+
+    .game_state button {
+        font-size: 2vmax;
     }
 
     .game_state > div {
         /*width: 25%;*/
         padding: 3px;
-        margin: 3px;
-        margin-left: -25vmax;
+        margin: 3px 3px 3px -25vmax;
     }
 
     .game_state_content svg {
@@ -141,9 +159,7 @@
 @media (max-width: 850px) {
     .game_state > div {
         margin-left: -15vmax;
-    }.game_state_content p {
-         font-size: 2vmax;
-     }
+    }
 }
 
 @media (max-width: 800px) {
@@ -151,10 +167,6 @@
         margin-left: -17vmax;
         /*    padding: 0;*/
         /*    width: 25%;*/
-    }
-
-    .game_state_content p {
-        font-size: 2vmax;
     }
 }
 
