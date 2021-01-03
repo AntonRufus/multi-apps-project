@@ -6,9 +6,9 @@ import Scissors from "./icons/Scissors";
 import "./winLoseDraw.css";
 
 const choices = [
-    {id: 1, name: 'rock', component: Rock},
-    {id: 2, name: 'paper', component: Paper},
-    {id: 3, name: 'scissors', component: Scissors},
+    {id: 1, name: 'rock', component: Rock, losesTo: 2},
+    {id: 2, name: 'paper', component: Paper, losesTo: 3},
+    {id: 3, name: 'scissors', component: Scissors, losesTo: 1},
 ];
 
 // 1. handle wins+losses
@@ -18,6 +18,7 @@ const choices = [
 const PaperRockScissors = () => {
     const [wins, setWins] = useState(0);
     const [losses, setLosses] = useState(0);
+    const [draws, setDraws] = useState(0);
     const [userChoice, setUserChoice] = useState(null);
     const [computerChoice, setComputerChoice] = useState(null);
     const [gameState, setGameState] = useState(null); //win, lose, draw
@@ -32,7 +33,19 @@ const PaperRockScissors = () => {
         setUserChoice(chosenChoice);
 
         // determine the winner
-        setGameState('win');
+        if (chosenChoice.losesTo === computerChoice.id) {
+            // lose
+            setLosses(losses => losses + 1)
+            setGameState('lose')
+        } else if (computerChoice.losesTo === chosenChoice.id) {
+            // win
+            setWins(wins => wins + 1)
+            setGameState('win')
+        } else if (chosenChoice.id === chosenChoice.id) {
+            // draw
+            setDraws(draws => draws + 1)
+            setGameState('draw')
+        }
     }
 
     const renderComponent = (choice) => {
@@ -57,6 +70,11 @@ const PaperRockScissors = () => {
                         <span className={css.number}>{losses}</span>
                         <span className={css.text}>{losses === 1 ? 'Loss' : 'Losses'}</span>
                     </div>
+
+                    <div className={css.draws}>
+                        <span className={css.number}>{draws}</span>
+                        <span className={css.text}>{draws === 1 ? 'Draw' : 'Draws'}</span>
+                    </div>
                 </div>
             </div>
 
@@ -66,7 +84,10 @@ const PaperRockScissors = () => {
                     <div>
                         <div className='game_state_content'>
                             <p>{renderComponent(userChoice)}</p>
-                            <p>You won!</p>
+                            {/*<p>You {gameState}!</p>*/}
+                            {gameState === 'win' && <p>Congrats! You won!</p>}
+                            {gameState === 'lose' && <p>Sorry! You lost!</p>}
+                            {gameState === 'draw' && <p>Oh! You drew!</p>}
                             <p>{renderComponent(computerChoice)}</p>
                         </div>
                     </div>

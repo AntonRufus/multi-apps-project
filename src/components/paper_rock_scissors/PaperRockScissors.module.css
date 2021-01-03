@@ -52,25 +52,29 @@ h6 {
 }
 
 .wins,
-.losses {
+.losses,
+.draws {
     display: flex;
     align-items: center;
 }
 
 .wins .number,
-.losses .number {
+.losses .number,
+.draws .number {
     font-size: 3vmax;
     margin-right: 5px;
 }
 
 .wins .text,
-.losses .text {
+.losses .text,
+.draws .text {
     margin-left: 5px;
     margin-right: 5px;
     text-decoration: underline;
 }
 
-.wins {
+.wins,
+.losses {
     margin-right: 30px;
 }
 
@@ -80,6 +84,10 @@ h6 {
 
 .losses .number {
     color: #da516f;
+}
+
+.draws .number {
+    color: #767374;
 }
 
 .choices {
@@ -292,7 +300,8 @@ h6 {
     }
 
     .wins .text,
-    .losses .text {
+    .losses .text,
+    .draws .text {
         margin-left: 3px;
         margin-right: 3px;
     }
@@ -340,19 +349,22 @@ h6 {
     }
 
     .wins .number,
-    .losses .number {
+    .losses .number,
+    .draws .number {
         font-size: 3vmax;
         margin-right: 0;
     }
 
     .wins .text,
-    .losses .text {
+    .losses .text,
+    .draws .text {
         margin-left: 1px;
         margin-right: 1px;
         text-decoration: underline;
     }
 
-    .wins {
+    .wins,
+    .losses {
         margin-right: 1px;
     }
 

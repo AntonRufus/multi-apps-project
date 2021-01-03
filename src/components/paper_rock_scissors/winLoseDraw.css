@@ -141,12 +141,14 @@
 @media (max-width: 850px) {
     .game_state > div {
         margin-left: -15vmax;
-    }
+    }.game_state_content p {
+         font-size: 2vmax;
+     }
 }
 
 @media (max-width: 800px) {
     .game_state > div {
-        margin-left: -20vmax;
+        margin-left: -17vmax;
         /*    padding: 0;*/
         /*    width: 25%;*/
     }
@@ -158,18 +160,18 @@
 
 @media (max-width: 740px) {
     .game_state > div {
-        margin-left: -16vmax;
+        margin-left: -9vmax;
     }
 }
 
 @media (max-width: 670px) {
     .game_state > div {
-        margin-left: -10vmax;
+        margin-left: -5vmax;
     }
 }
 
 @media (max-width: 630px) {
     .game_state > div {
-        margin-left: -5vmax;
+        margin-left: 0;
     }
 }
