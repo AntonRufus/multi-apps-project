@@ -258,6 +258,7 @@ h6 {
         min-height: 55vh;
         padding: 3vmax 1vmax 1vmax 1vmax;
         margin-top: 10vmax;
+        margin-left: 2vmax;
     }
 
     .choices {
