@@ -7,10 +7,11 @@ import JustTimer from "./components/timer/JustTimer";
 import BrowserTabs from "./components/browser_tabs/BrowserTabs";
 import Home from "./components/home/Home"
 import PaperRockScissors from "./components/paper_rock_scissors/PaperRockScissors";
+import MovingBoxes from "./components/moving_boxes/MovingBoxes";
 
 const AppRouter = () =>
     <Switch>
-        {/*<Route exact={true} path='/'>   <Home />            </Route>*/}
+        {/*<Route exact={true} path='/'>        <Home />                        </Route>*/}
         <Route exact={true} path='/'>           <Redirect to={'/home'}/>        </Route>
         <Route path='/home'>                    <Home/>                         </Route>
         <Route path='/pomodoro_timer'>          <PomodoroTimer/>                </Route>
@@ -18,6 +19,7 @@ const AppRouter = () =>
         <Route path='/markdown_editor'>         <MarkdownEditor/>               </Route>
         <Route path='/browser_tabs'>            <BrowserTabs/>                  </Route>
         <Route path='/paper_rock_scissors'>     <PaperRockScissors/>            </Route>
+        <Route path='/moving_boxes'>            <MovingBoxes/>                  </Route>
     </Switch>
 
 export default AppRouter;
