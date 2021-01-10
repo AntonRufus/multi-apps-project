@@ -9,6 +9,7 @@ function App() {
             <div className="Nav_bar">
                 <NavBar/>
             </div>
+
             <div className="content">
                 <AppRouter/>
             </div>

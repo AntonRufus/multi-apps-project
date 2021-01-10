@@ -7,7 +7,8 @@ import JustTimer from "./components/timer/JustTimer";
 import BrowserTabs from "./components/browser_tabs/BrowserTabs";
 import Home from "./components/home/Home"
 import PaperRockScissors from "./components/paper_rock_scissors/PaperRockScissors";
-import MovingBoxes from "./components/moving_boxes/MovingBoxes";
+// import MovingBoxes from "./components/moving_boxes/MovingBoxes";
+import InfiniteImageGallery from "./components/infinite_image_gallery/InfiniteImageGallery";
 
 const AppRouter = () =>
     <Switch>
@@ -19,7 +20,8 @@ const AppRouter = () =>
         <Route path='/markdown_editor'>         <MarkdownEditor/>               </Route>
         <Route path='/browser_tabs'>            <BrowserTabs/>                  </Route>
         <Route path='/paper_rock_scissors'>     <PaperRockScissors/>            </Route>
-        <Route path='/moving_boxes'>            <MovingBoxes/>                  </Route>
+        {/*<Route path='/moving_boxes'>         <MovingBoxes/>                  </Route>*/}
+        <Route path='/infinite_image_gallery'>  <InfiniteImageGallery/>         </Route>
     </Switch>
 
 export default AppRouter;
