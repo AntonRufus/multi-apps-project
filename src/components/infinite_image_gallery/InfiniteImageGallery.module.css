@@ -6,7 +6,7 @@
     color: #ce7e15;
     min-height: 95vh;
     min-width: 65vmax;
-    padding: 5vmax;
+    padding: 2vmax 5vmax;
     border-radius: 10px;
     transition-duration: 0.7s;
     text-align: center;
@@ -82,10 +82,17 @@ button:hover {
     grid-gap: 15px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-rows: minmax(50px, 200px);
+    transition-duration: 0.1s;
 }
 
+/*
+.image_grid:hover {
+    grid-gap: 20px;
+}
+*/
+
 .image {
-    background: #fff;
+    background: #d7d7d7;
     padding: 3px;
     border-radius: 3px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
