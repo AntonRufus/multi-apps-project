@@ -2,16 +2,40 @@ import React, {useEffect, useState} from "react";
 import css from "./InfiniteImageGallery.module.css"
 import InfiniteScroll from "react-infinite-scroll-component";
 
-
 const accessKey = process.env.REACT_APP_UNSPLASH_ACCESS_KEY;
 // const accessKey = undefined;
 
 const InfiniteImageGallery = () => {
     const [images, setImages] = useState([]);
     const [page, setPage] = useState(1);
+    const [query, setQuery] = useState('');
+
+    /*const getPhotos = useCallback(() => {
+        // console.log(accessKey);
+
+        let apiUrl = `https://api.unsplash.com/photos?`;
+        // let apiUrl = `https://api.unsplash.com/photos/random?&count=14`;
+
+        if (query) apiUrl = `https://api.unsplash.com/search/photos?query=${query}&count=14`;
+
+        apiUrl += `&page=${page}`
+        apiUrl += `&per_page=12`
+        apiUrl += `&client_id=${accessKey}`;
+
+        console.log(apiUrl);
+
+        fetch(apiUrl)
+            .then((res) => res.json())
+            .then((data) => {
+                const imagesFromApi = data.results ?? data;
+                if (page === 1) setImages(imagesFromApi); // if page is 1, then we need a whole new array of images
+                else setImages((images) => [...images, ...imagesFromApi]); // if page > 1,then we are adding for our infinite scroll
+            });
+    }, [page, query]);*/
 
     useEffect(() => {
         getPhotos();
+        // eslint-disable-next-line
     }, [page]);
 
     // return an error if there is no access key
@@ -23,14 +47,32 @@ const InfiniteImageGallery = () => {
         )
     }
 
+    const searchPhotos = (e) => {
+        e.preventDefault();
+        setPage(1);
+        getPhotos();
+    };
+
     const getPhotos = () => {
         // console.log(accessKey);
-        fetch(`https://api.unsplash.com/photos/?client_id=${accessKey}&per_page=14&page=${page}`)
-            // fetch(`https://api.unsplash.com/photos/?client_id=bYRYecx0nTuGZUD7pF-vfW7v0XcxajNz2pETgpDwvlI`)
+
+        let apiUrl = `https://api.unsplash.com/photos?`;
+        // let apiUrl = `https://api.unsplash.com/photos/random?&count=14`;
+
+        if (query) apiUrl = `https://api.unsplash.com/search/photos?query=${query}&count=14`;
+
+        apiUrl += `&page=${page}`
+        apiUrl += `&per_page=12`
+        apiUrl += `&client_id=${accessKey}`;
+
+        console.log(apiUrl);
+
+        fetch(apiUrl)
             .then((res) => res.json())
-            // .then((data) => setImages(data));
             .then((data) => {
-                setImages((images) => [...images, ...data])
+                const imagesFromApi = data.results ?? data;
+                if (page === 1) setImages(imagesFromApi); // if page is 1, then we need a whole new array of images
+                else setImages((images) => [...images, ...imagesFromApi]); // if page > 1,then we are adding for our infinite scroll
             });
     };
 
@@ -38,17 +80,23 @@ const InfiniteImageGallery = () => {
         <div className={css.wrapper}>
             <h1>Unsplash Image Gallery!</h1>
 
-            <form>
-                <input type="text" placeholder="Search Unsplash..."/>
+            <form onSubmit={searchPhotos}>
+                <input
+                    type="text"
+                    placeholder="Search Unsplash..."
+                    value={query}
+                    onChange={e => setQuery(e.target.value)}
+                />
                 <button>Search</button>
             </form>
+
             <InfiniteScroll
                 dataLength={images.length} //This is important field to render the next data
                 next={() => setPage(page => page + 1)}
                 hasMore={true}
                 loader={<h4>Loading...</h4>}
             >
-                {/**/}
+
                 <div className={css.image_grid}>
                     {/*{[...Array(14)].map((_, index) => (*/}
                     {images.map((image, index) => (
@@ -64,7 +112,7 @@ const InfiniteImageGallery = () => {
                         </a>
                     ))}
                 </div>
-                {/**/}
+
             </InfiniteScroll>
         </div>
     )
