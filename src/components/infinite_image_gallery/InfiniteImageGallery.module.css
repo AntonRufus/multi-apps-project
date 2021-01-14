@@ -11,7 +11,7 @@
     transition-duration: 0.7s;
     text-align: center;
     background: #3b414c;
-    max-width: 1500px;
+    max-width: 1200px;
 }
 
 .wrapper:hover {
@@ -113,4 +113,74 @@ button:hover {
 
 .image:nth-child(3n) {
     grid-column-end: span 2;
+}
+
+@media (max-width: 1650px) {
+    .wrapper {
+        padding: 1vmax 2vmax;
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .wrapper {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .wrapper {
+        max-width: 800px;
+    }
+
+    .image_grid {
+        grid-gap: 5px;
+    }
+
+    form {
+        margin-bottom: 10px;
+    }
+
+    input[type='text'] {
+        padding: 5px 10px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .image:nth-child(1n) {
+        grid-column-end: span 1;
+    }
+
+    .image:nth-child(2n) {
+        grid-column-end: span 1;
+    }
+
+    .image:nth-child(3n) {
+        grid-column-end: span 1;
+    }
+}
+
+@media (max-width: 1100px) {
+    .wrapper {
+        padding: 1vmax 1vmax;
+        margin-left: 1vmax;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 950px) {
+    .wrapper {
+        max-width: 600px;
+        padding: 1px;
+    }
+    .image_grid {
+        grid-gap: 2px;
+    }
 }
