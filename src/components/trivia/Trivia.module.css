@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ce7e15;
+    min-height: 95vh;
+    min-width: 65vmax;
+    padding: 2vmax 5vmax;
+    border-radius: 10px;
+    transition-duration: 0.7s;
+    text-align: center;
+    /*background: #000917;*/
+    max-width: 1200px;
+}
+
+.wrapper:hover {
+    background-color: rgba(238, 255, 0, 0.25);
+}

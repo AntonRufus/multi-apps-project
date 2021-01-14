@@ -11,6 +11,7 @@ const NavBar = () =>
         <NavCreator     to={'/paper_rock_scissors'}             title={'Paper Rock Scissors'}/>
         {/*<NavCreator  to={'/moving_boxes'}                    title={'Moving Boxes'}/>*/}
         <NavCreator     to={'/infinite_image_gallery'}          title={'Infinite Gallery'}/>
+        <NavCreator     to={'/trivia'}                          title={'Trivia'}/>
         <hr/>
     </div>
 
