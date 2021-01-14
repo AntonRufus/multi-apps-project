@@ -180,7 +180,44 @@ button:hover {
         max-width: 600px;
         padding: 1px;
     }
+
     .image_grid {
         grid-gap: 2px;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        min-width: 200px;
+        max-width: 250px;
+        padding: 1px;
+        margin: 0;
+    }
+
+    .image_grid {
+        grid-gap: 1px;
+    }
+
+    .image {
+        height: 15vmax;
+        width: 25vmax;
+    }
+
+    .image img {
+    }
+
+    input[type='text'] {
+        margin: 0;
+        min-width: 200px;
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 2vmax;
+    }
+
+    button {
+        padding: 7px 5px;
+        font-size: 1.5vmax;
     }
 }
