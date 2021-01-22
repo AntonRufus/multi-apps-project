@@ -13,7 +13,8 @@
 }
 
 .wrapper:hover {
-    background: #26436d;
+    background-color: #26436d;
+    background-image: url("https://www.onlygfx.com/wp-content/uploads/2018/07/grunge-numbers-7.png");
 }
 
 h1,
