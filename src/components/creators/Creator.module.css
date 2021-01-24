@@ -34,6 +34,11 @@
     margin-bottom: -15px;
 }
 
+.bgc a:active {
+    background-color: #b19601;
+    color: saddlebrown;
+}
+
 @media (max-width: 1200px) {
     .bgc a {
         font-size: 2vmax;
