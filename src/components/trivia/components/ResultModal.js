@@ -1,10 +1,11 @@
 import React from 'react';
 import css from "../Trivia.module.css"
 
-export default function ResultModal({isCorrect, correctAnswer, getQuestion, setIsCorrect}) {
+export default function ResultModal({isCorrect, correctAnswer, handleNextQuestion}) {
     return (
         <div className={css.result_modal}>
             <div className={css.overlay}/>
+
             <div className={css.result_modal_content}>
                 {isCorrect && <div className={css.is_correct}>
                     <h3>
@@ -12,8 +13,7 @@ export default function ResultModal({isCorrect, correctAnswer, getQuestion, setI
                         <br/>
                         YOU WON!
                     </h3>
-                </div>
-                }
+                </div>}
 
                 {!isCorrect && <div className={css.is_wrong}>
                     <h3>
@@ -28,14 +28,9 @@ export default function ResultModal({isCorrect, correctAnswer, getQuestion, setI
                         <strong dangerouslySetInnerHTML={{__html: correctAnswer}}/>
                         {/*{correctAnswer}</strong>*/}
                     </div>
-                </div>
-                }
+                </div>}
 
-                <button onClick={() => {
-                    setIsCorrect(null);
-                    getQuestion();
-                }}>
-                    {/*<button onClick={ () => getQuestion() }>*/}
+                <button onClick={handleNextQuestion}>
                     Go to next question 👉
                 </button>
             </div>

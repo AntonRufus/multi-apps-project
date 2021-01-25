@@ -15,25 +15,28 @@ export default function Scoreboard({isCorrect}) {
     }, [isCorrect]);
 
     useEffect(() => {
-        if (wrong === 1)
+        if (wrong === 10)
             alert.show('Keep pushing 🤦‍♂🤷'); // why 2 times???
     }, [wrong]);
 
     useEffect(() => {
-        if (correct === 1)
+        if (correct === 10)
             alert.show('Good job 🤪💥💪');
     }, [correct]);
 
     return (
         <div className={css.scoreboard}>
+
             <div className={css.wrong}>
                 <strong>{wrong}</strong>
                 <span>wrong</span>
             </div>
+
             <div className={css.correct}>
                 <strong>{correct}</strong>
                 <span>correct</span>
             </div>
+
         </div>
     );
 }

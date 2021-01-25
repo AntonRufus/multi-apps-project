@@ -8,10 +8,10 @@ const NavBar = () =>
         <NavCreator     to={'/just_timer'}                      title={'Just Timer'}/>
         <NavCreator     to={'/markdown_editor'}                 title={'Markdown Editor'}/>
         <NavCreator     to={'/browser_tabs'}                    title={'Browser Tabs'}/>
-        <NavCreator     to={'/paper_rock_scissors'}             title={'Paper Rock Scissors'}/>
-        {/*<NavCreator  to={'/moving_boxes'}                    title={'Moving Boxes'}/>*/}
+        <NavCreator     to={'/paper_rock_scissors'}             title={'RPS  ✊ 🤚 🖖'}/>
         <NavCreator     to={'/infinite_image_gallery'}          title={'Infinite Gallery'}/>
         <NavCreator     to={'/trivia'}                          title={'Trivia'}/>
+        {/*<NavCreator  to={'/moving_boxes'}                    title={'Moving Boxes'}/>*/}
         <hr/>
     </div>
 
