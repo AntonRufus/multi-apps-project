@@ -7,9 +7,9 @@ import JustTimer from "./components/timer/JustTimer";
 import BrowserTabs from "./components/browser_tabs/BrowserTabs";
 import Home from "./components/home/Home"
 import PaperRockScissors from "./components/paper_rock_scissors/PaperRockScissors";
-// import MovingBoxes from "./components/moving_boxes/MovingBoxes";
 import InfiniteImageGallery from "./components/infinite_image_gallery/InfiniteImageGallery";
 import Trivia from "./components/trivia/Trivia";
+import Authentication from "./components/authentication/Authentication";
 
 const AppRouter = () =>
     <Switch>
@@ -21,9 +21,9 @@ const AppRouter = () =>
         <Route path='/markdown_editor'>         <MarkdownEditor/>               </Route>
         <Route path='/browser_tabs'>            <BrowserTabs/>                  </Route>
         <Route path='/paper_rock_scissors'>     <PaperRockScissors/>            </Route>
-        {/*<Route path='/moving_boxes'>         <MovingBoxes/>                  </Route>*/}
         <Route path='/infinite_image_gallery'>  <InfiniteImageGallery/>         </Route>
         <Route path='/trivia'>                  <Trivia/>                       </Route>
+        <Route path='/authentication'>          <Authentication/>                 </Route>
     </Switch>
 
 export default AppRouter;
