@@ -250,3 +250,87 @@
     background: #4dc0b5;
     color: white;
 }
+
+/* adaptive part ---------------------- */
+
+@media (max-width: 800px) {
+    .wrapper .app .question button {
+        min-height: 50px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .question {
+        width: 100%;
+    }
+
+    .question_header {
+        display: inline;
+    }
+
+    .question h2 {
+        font-size: 14px;
+        min-height: 100px;
+    }
+
+    .question_main {
+        padding: 2.5rem;
+        min-width: 250px;
+        max-width: 50%;
+        height: 450px;
+    }
+
+    .question_footer {
+        margin-top: 15px;
+        text-align: left;
+    }
+
+    .category_selector {
+        max-width: 100%;
+    }
+
+    .category_selector select {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .scoreboard {
+        display: flex;
+        align-items: center;
+        text-align: right;
+        font-size: 14px;
+        line-height: 1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .scoreboard > div:first-child {
+        margin-left: 35px;
+        margin-right: 75px;
+    }
+
+    .scoreboard .wrong {
+        color: rgb(211, 79, 79);
+        font-weight: bold;
+    }
+
+    .scoreboard .correct {
+        color: rgb(23, 219, 23);
+        font-weight: bold;
+    }
+
+    .scoreboard strong {
+        color: #fff;
+        font-size: 30px;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .wrapper {
+        min-height: 55vh;
+        min-width: 5vmax;
+        padding: 0.5vmax 0.5vmax;
+        max-width: 255px;
+    }
+}
