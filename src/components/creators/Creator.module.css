@@ -39,12 +39,36 @@
     color: saddlebrown;
 }
 
+.moving_boxes_link {
+    margin-top: 5vmax;
+    background-color: rgba(26, 59, 121, 0.4);
+    /*border: 2px solid #282c34;*/
+    border: 2px solid rgba(26, 59, 121, 0.000001);
+    border-radius: 25px;
+    text-align: center;
+    height: 50px;
+    padding-top: 11px;
+    font-size: 1.5vmax;
+    box-shadow: 0 0 4vmax 2.5vmax rgba(26, 59, 121, 0.4);
+}
+
+.moving_boxes_link:hover {
+    background-color: #1c366d;
+    border: 2px solid gold;
+}
+
 @media (max-width: 1200px) {
     .bgc a {
         font-size: 2vmax;
         padding: 13px 15px;
         margin-top: -13px;
         margin-bottom: -13px;
+    }
+
+    .moving_boxes_link {
+        font-size: 2vmax;
+        height: 40px;
+        padding-top: 6px;
     }
 }
 
@@ -63,6 +87,12 @@
         padding: 10px 10px;
         margin-top: -11px;
         margin-bottom: -12px;
+    }
+
+    .moving_boxes_link {
+        font-size: 1.5vmax;
+        height: 30px;
+        padding-top: 4px;
     }
 }
 

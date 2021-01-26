@@ -1,5 +1,6 @@
 import React from "react";
 import {NavCreator} from "../creators/Creator";
+import css from "../creators/Creator.module.css";
 
 const NavBar = () =>
     <div>
@@ -13,6 +14,7 @@ const NavBar = () =>
         <NavCreator     to={'/trivia'}                          title={'Trivia'}/>
         {/*<NavCreator  to={'/moving_boxes'}                    title={'Moving Boxes'}/>*/}
         <hr/>
+        <div className={css.moving_boxes_link}><a target='_blank' href="https://antonrufus.github.io/moving-boxes/">Moving boxes</a></div>
     </div>
 
 export default NavBar;
