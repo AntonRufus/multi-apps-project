@@ -58,6 +58,7 @@ blockquote {
 ul li {
     background: #313438;
     border-left: 3px solid #ce16f8;
+    border-radius: 5px;
     padding: 7px 10px;
     min-width: 5px;
     max-width: 40vmax;
@@ -99,6 +100,7 @@ ul li {
     textarea {
         font-size: 2vmax;
         width: 15vmax;
+        margin-top: 15px;
     }
 }
 
@@ -136,5 +138,56 @@ ul li {
 @media (max-width: 800px) {
     .wrapper {
         padding: 1vmax;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 0.5vmax;
+        min-width: 25vmax;
+        max-width: 29vmax;
+    }
+
+    .preview {
+        padding-left: 0;
+        margin-left: 2px;
+        font-size: 1.3vmax;
+    }
+
+    textarea {
+        font-size: 1.3vmax;
+        width: 28vmax;
+        padding: 5px;
+        height: 20vmax;
+    }
+
+    .preview {
+        float: left;
+    }
+
+    .preview h1 {
+        padding-left: 5px;
+        padding-right: 0;
+        font-size: 1.3vmax;
+    }
+
+    blockquote {
+        padding: 3px 5px;
+        margin-left: 15px;
+        max-width: 40vmax;
+    }
+
+    blockquote p {
+        max-width: 40vmax;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    ul li {
+        padding: 3px 5px;
+        min-width: 5px;
+        max-width: 30vmax;
     }
 }

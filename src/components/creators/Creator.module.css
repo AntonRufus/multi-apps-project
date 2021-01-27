@@ -98,8 +98,15 @@
 
 @media (max-width: 600px) {
     .bgc a {
+        margin-top: -9px;
+        margin-bottom: -10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .bgc a {
         font-size: 1.5vmax;
-        padding: 10px 10px;
+        padding: 10px 5px;
         margin-top: -9px;
         margin-bottom: -10px;
     }

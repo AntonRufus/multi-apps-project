@@ -416,21 +416,30 @@ h6 {
         padding: 1vmax;
     }
 
-    /*.choices {*/
-    /*    margin-bottom: 15px;*/
-    /*}*/
+        /*.choices {*/
+        /*    margin-bottom: 15px;*/
+        /*}*/
+        /*
+        .game_state_content {
+            margin-left: -22vmax;
+            padding: 0;
+            !*width: 25%;*!
+        }
 
-    /*
-    .game_state_content {
-        margin-left: -22vmax;
-        padding: 0;
-        !*width: 25%;*!
+        .game_state_content p {
+            font-size: 4vmax;
+        }
+        */
     }
 
-    .game_state_content p {
-        font-size: 4vmax;
+@media (max-width: 600px) {
+    .wrapper {
+        min-width: 20vmax;
+        max-width: 25vmax;
+        min-height: 35vh;
+        padding: 1vmax;
+        padding-top: 3vmax;
     }
-    */
 }
 
 /*

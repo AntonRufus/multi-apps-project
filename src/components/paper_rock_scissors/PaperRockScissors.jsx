@@ -65,7 +65,7 @@ const PaperRockScissors = () => {
         <div className={css.wrapper}>
             {/* information goes here */}
             <div className={css.info}>
-                <h2>Rock. Paper. Scissors</h2>
+                <h2>Rock. Paper. Scissors.</h2>
 
                 {/* wins vs losses stats */}
                 <div className={css.wins_losses}>
