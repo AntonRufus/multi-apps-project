@@ -1,12 +1,12 @@
 import React from 'react';
-// import Frodo from '../img/frodo.png';
-import "../Authentication.module.css"
+import css from "../Authentication.module.css"
 
 const Dashboard = () => {
     return (
-        <div className="page dashboard">
+        <div className={`${css.page} ${css.dashboard}`}>
             <div>
-                {/*<img src={Frodo} alt="Frodo"/>*/}
+                <img src="https://cdn0.iconfinder.com/data/icons/famous-character-vol-2-colored/48/JD-44-512.png"
+                     alt="Frodo"/>
                 <h2>Welcome Persom</h2>
             </div>
         </div>

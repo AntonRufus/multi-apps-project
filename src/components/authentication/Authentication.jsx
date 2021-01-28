@@ -9,22 +9,22 @@ const Authentication = () => {
 
 
     return (<div className={css.wrapper}>
-        <Router>
-            <div className={css.app}>
-                {/* site header */}
-                <SiteHeader/>
+            <Router>
+                <div className={css.app}>
+                    {/* site header */}
+                    <SiteHeader/>
 
-                {/* routes */}
-                <Switch>
-                    <Route path="/dashboard">
-                        <Dashboard/>
-                    </Route>
-                    <Route path="/" exact={true}>
-                        <HomeAuth/>
-                    </Route>
-                </Switch>
-            </div>
-        </Router>
+                    {/* routes */}
+                    <Switch>
+                        <Route path="/dashboard">
+                            <Dashboard/>
+                        </Route>
+                        <Route path="" exact={true}>
+                            <HomeAuth/>
+                        </Route>
+                    </Switch>
+                </div>
+            </Router>
         </div>
     );
 };

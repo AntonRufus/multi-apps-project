@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import css from "../Authentication.module.css"
+import css from "../Authentication.module.css";
 
 const SiteHeader = () => {
     return (

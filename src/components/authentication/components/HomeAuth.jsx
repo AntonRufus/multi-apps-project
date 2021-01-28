@@ -1,12 +1,11 @@
 import React from 'react';
-// import Gandalf from '../img/gandalf.png';
-import "../Authentication.module.css"
+import css from "../Authentication.module.css"
 
 const HomeAuth = () => {
     return (
-        <div className="page home">
+        <div className={`${css.page} ${css.home}`}>
             <div>
-                {/*<img src={Gandalf} alt="Gandalf"/>*/}
+                <img src='https://cdn0.iconfinder.com/data/icons/famous-character-vol-2-colored/48/JD-41-512.png' alt="Gandalf"/>
                 <h2>You Shall Not Pass!!!</h2>
             </div>
         </div>
