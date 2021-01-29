@@ -60,8 +60,8 @@
 
 .moving_boxes_link:hover {
     /*background-color: #18397f;*/
-    background-color: gold;
-    border: 2px solid #18397f;
+    background-color: #b19601;
+    border: 2px solid rgba(255, 215, 0, 0.2);
     transition-duration: 1s;
 }
 
