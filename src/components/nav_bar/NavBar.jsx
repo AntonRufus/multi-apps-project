@@ -12,9 +12,11 @@ const NavBar = () =>
         <NavCreator     to={'/paper_rock_scissors'}             title={'RPS  ✊ 🤚 🖖'}/>
         <NavCreator     to={'/infinite_image_gallery'}          title={'Infinite Gallery'}/>
         <NavCreator     to={'/trivia'}                          title={'Trivia'}/>
-        <NavCreator     to={'/authentication'}                  title={'Authentication'}/>
+        <NavCreator     to={'/authentication/home'}             title={'Authentication'}/>
         <hr/>
-        <div className={css.moving_boxes_link}><a target='_blank' href="https://antonrufus.github.io/moving-boxes/">Moving boxes</a></div>
+        <div className={css.moving_boxes_link}>
+                <a target='_blank' href="https://antonrufus.github.io/moving-boxes/">Moving boxes</a>
+        </div>
     </div>
 
 export default NavBar;
