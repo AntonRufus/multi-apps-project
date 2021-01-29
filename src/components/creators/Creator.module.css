@@ -50,11 +50,19 @@
     padding-top: 11px;
     font-size: 1.5vmax;
     box-shadow: 0 0 4vmax 2.5vmax rgba(26, 59, 121, 0.4);
+    transition-duration: 1s;
+}
+
+.moving_boxes_link:hover a {
+    color: #18397f;
+    font-weight: bold;
 }
 
 .moving_boxes_link:hover {
-    background-color: #18397f;
-    border: 2px solid gold;
+    /*background-color: #18397f;*/
+    background-color: gold;
+    border: 2px solid #18397f;
+    transition-duration: 1s;
 }
 
 @media (max-width: 1200px) {
@@ -100,6 +108,11 @@
     .bgc a {
         margin-top: -9px;
         margin-bottom: -10px;
+    }
+
+    .moving_boxes_link {
+        font-size: 1.4vmax;
+        padding-top: 2px;
     }
 }
 
