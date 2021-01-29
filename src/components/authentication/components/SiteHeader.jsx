@@ -7,8 +7,8 @@ const SiteHeader = () => {
         <div className={css.site_header}>
             {/* stuff on the left */}
             <div>
-                <Link to="/">Home</Link>
-                <Link to="/dashboard">Dashboard</Link>
+                <Link to="/authentication/home">Home</Link>
+                <Link to="/authentication/dashboard">Dashboard</Link>
             </div>
 
             {/* stuff on the right */}
