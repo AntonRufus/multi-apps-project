@@ -1,7 +1,11 @@
-import React, {createContext, useEffect, useState} from 'react';
+import React, {createContext, useContext, useEffect, useState} from 'react';
 import createAuth0Client from '@auth0/auth0-spa-js';
+import css from "../Authentication.module.css"
+import Spinner from '../img/Spinner.svg'
 
 export const Auth0Context = createContext('');
+export const useAuth0 = () => useContext(Auth0Context);
+
 
 export function Auth0Provider({children}) {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -49,6 +53,11 @@ export function Auth0Provider({children}) {
             setIsLoading(false);
         }
     }, []);
+
+    if (isLoading) return <div className={css.spinner}>
+        <img src={Spinner} alt=""/>
+        {/*<p>Loading...</p>*/}
+    </div>;
 
     return (
         <Auth0Context.Provider

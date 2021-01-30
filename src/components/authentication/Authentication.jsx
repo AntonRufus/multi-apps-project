@@ -1,14 +1,21 @@
-import React, {useContext, useEffect} from "react";
+import React from "react";
 import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 import css from "./Authentication.module.css"
 import SiteHeader from "./components/SiteHeader";
 import HomeAuth from "./components/HomeAuth";
 import Dashboard from "./components/Dashboard";
-import {Auth0Context} from "./contexts/auth0-context";
+import {useAuth0} from "./contexts/auth0-context";
+import PrivateRoute from "./components/PrivateRoute";
 
 const Authentication = () => {
-    const auth0 = useContext(Auth0Context);
+    const auth0 = useAuth0();
     console.log(auth0);
+
+    /*if (auth0.isAuthenticated) {
+        return <AuthenticatedApp/>
+    }else  {
+        return <UnAuthenticatedApp/>
+    }*/
 
     return (
         <div className={css.wrapper}>
@@ -19,9 +26,9 @@ const Authentication = () => {
 
                     {/* routes */}
                     <Switch>
-                        <Route path="/authentication/dashboard">
+                        <PrivateRoute path="/authentication/dashboard">
                             <Dashboard/>
-                        </Route>
+                        </PrivateRoute>
                         <Route path="/authentication/home">
                             <HomeAuth/>
                         </Route>
