@@ -4,6 +4,10 @@ import css from "../creators/Creator.module.css";
 
 const NavBar = () =>
     <div>
+        <div className={css.arrows}>
+              <button className={css.arrow_up}>⬆</button>
+              <button className={css.arrow_down}>⬇</button>
+        </div>
         <NavCreator     to={'/home'                     }       title={'Home page'}/>
         <NavCreator     to={'/pomodoro_timer'           }       title={'Pomodoro Timer'}/>
         <NavCreator     to={'/just_timer'               }       title={'Just Timer'}/>

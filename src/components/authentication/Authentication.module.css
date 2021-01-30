@@ -118,6 +118,7 @@ h6 {
     border-radius: 30%;
     transition-duration: 1s;
     width: 50%;
+    margin-bottom: 10%;
 }
 
 .page img:hover {
@@ -130,6 +131,10 @@ h6 {
 @media (max-width: 1500px) {
     .page h2 {
         margin-left: 3vmax;
+    }
+
+    .page img {
+        margin-bottom: 7%;
     }
 }
 
@@ -148,6 +153,10 @@ h6 {
 @media (max-width: 1200px) {
     .page h2 {
         margin-left: 8vmax;
+    }
+
+    .page img {
+        margin-bottom: 5%;
     }
 }
 
@@ -189,7 +198,7 @@ h6 {
     }
 
     .page h2 {
-        margin-left: 20%;
+        margin-left: 15%;
     }
 }
 
@@ -205,6 +214,10 @@ h6 {
     .page h2 {
         margin-left: 0;
         padding: 10px;
+    }
+
+    .page img {
+        margin-bottom: 7%;
     }
 
     .site_header {
@@ -237,6 +250,10 @@ h6 {
     .page h2 {
         font-size: 1.3vmax;
         width: 19.5vmax;
+    }
+
+    .page img {
+        margin-bottom: 5%;
     }
 
     .site_header {
