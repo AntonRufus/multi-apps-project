@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
 import css from "../Authentication.module.css";
+import {Auth0Context} from "../contexts/auth0-context";
 
 const SiteHeader = () => {
+    // const auth0 = useContext(Auth0Context);
+    const {isAuthenticated, login, logout, user} = useContext(Auth0Context);
+
     return (
         <div className={css.site_header}>
             {/* stuff on the left */}
@@ -13,8 +17,15 @@ const SiteHeader = () => {
 
             {/* stuff on the right */}
             <div>
-                <button>Login</button>
-                <button>Logout</button>
+                {/*{!isAuthenticated && <button onClick={() =>  login()}>Login</button>}*/}
+                {/*{ isAuthenticated && <button onClick={() => logout()}>Logout</button>}*/}
+                {!isAuthenticated && <button onClick={login}>Login</ button>}
+                {isAuthenticated && user && (
+                    <>
+                        <button>{user.nickname}</button>
+                        <button onClick={logout}>Logout</button>
+                    </>
+                )}
             </div>
         </div>
     );

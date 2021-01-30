@@ -27,6 +27,7 @@ h6 {
     border-radius: 5px;
     margin-bottom: -49px;
     position: relative;
+    /*position: fixed;*/
     width: 100%;
     left: 0;
     right: 0;
@@ -39,28 +40,36 @@ h6 {
     transition-duration: 0.3s;
 }
 
+.site_header:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transition-duration: 0.5s;
+}
+
 .site_header a,
 .site_header button {
     display: inline-block;
     padding: 4px 8px;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Calistoga', cursive;
     color: #25b75f;
     margin-right: 8px;
     text-decoration: none;
     background: none;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     transition-duration: 0.3s;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .site_header a:hover,
 .site_header button:hover {
-    color: rgb(31, 132, 80);
+    color: black;
+    text-shadow: 2px 2px 3px #000;
 }
 
 .page {
-    min-height: 94vh;
+    min-height: 90vh;
     min-width: 65vmax;
     display: flex;
     align-items: center;
@@ -88,6 +97,13 @@ h6 {
     line-height: 1;
     margin-left: 0;
     position: absolute;
+    transition-duration: 0.5s;
+}
+
+.page h2:hover {
+    color: black;
+    text-shadow: 2px 4px 6px #000;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .dashboard {
@@ -164,6 +180,10 @@ h6 {
         margin-left: 6vmax;
     }
 
+    .site_header {
+        margin-bottom: -120px;
+    }
+
     .page {
         min-width: 40vmax;
     }
@@ -189,7 +209,7 @@ h6 {
 
     .site_header {
         padding: 10px 5px;
-        margin-bottom: -77px;
+        /*margin-bottom: -77px;*/
     }
 }
 
@@ -216,11 +236,16 @@ h6 {
 
     .page h2 {
         font-size: 1.3vmax;
-        width: 20vmax;
+        width: 19.5vmax;
     }
 
     .site_header {
         padding: 10px 0;
+    }
+
+    .site_header a,
+    .site_header button {
+        font-size: 1.3vmax;
     }
 }
 

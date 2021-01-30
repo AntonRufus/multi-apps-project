@@ -16,9 +16,23 @@ export function Auth0Provider({children}) {
             const auth0 = await createAuth0Client({
                 domain: 'antonrufus.eu.auth0.com',
                 client_id: 'GDDE7o0r59yoAoX9nufbSWDr63hNEotG',
+                redirect_uri: window.location.origin,
+                // redirect_uri: window.location.href='https://antonrufus.github.io/multi-apps-project/#/authentication',
             });
 
             setAuth0Client(auth0);
+
+            // handle redirect when user comes back
+            if (
+                window.location.search.includes('code=') &&
+                window.location.search.includes('state=')
+            ) {
+                try {
+                    await auth0.handleRedirectCallback();
+                } catch (err) {
+                    alert(err);
+                }
+            }
 
             // is a user authenticated
             const isAuthenticated = await auth0.isAuthenticated();
@@ -28,6 +42,8 @@ export function Auth0Provider({children}) {
                 const user = await auth0.getUser();
                 setUser(user);
                 console.log(user);
+                setIsAuthenticated(isAuthenticated);
+                console.log(isAuthenticated);
             }
 
             setIsLoading(false);
@@ -35,7 +51,13 @@ export function Auth0Provider({children}) {
     }, []);
 
     return (
-        <Auth0Context.Provider value={{isAuthenticated, user, isLoading,}}>
+        <Auth0Context.Provider
+            value={{
+                isAuthenticated, user, isLoading,
+                login: (...p) => auth0Client.loginWithRedirect(...p),
+                logout: (...p) => auth0Client.logout(...p),
+            }}
+        >
             {children}
         </Auth0Context.Provider>
     );
