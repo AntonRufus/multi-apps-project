@@ -62,6 +62,12 @@
     transition-duration: 1s;
 }
 
+.moving_boxes_link:active {
+    background-color: saddlebrown;
+    transition-duration: 0.3s;
+    border: 2px solid rgba(255, 215, 0, 0.1);
+}
+
 @media (max-width: 1200px) {
     .bgc a {
         font-size: 2vmax;
