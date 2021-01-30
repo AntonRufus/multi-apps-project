@@ -14,24 +14,6 @@
     background-color: rgba(101, 0, 255, 0.25);
 }
 
-
-
-/** {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    !* background-image: url('https://i.imgur.com/noNWRPk.png'); *!
-}
-
-.app {
-    position: relative;
-    height: 100vh;
-}*/
-
 .arrows {
     display: grid;
     grid-template: auto auto / auto auto auto;

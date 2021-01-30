@@ -4,15 +4,15 @@ import css from "../creators/Creator.module.css";
 
 const NavBar = () =>
     <div>
-        <NavCreator     to={'/home'}                            title={'Home page'}/>
-        <NavCreator     to={'/pomodoro_timer'}                  title={'Pomodoro Timer'}/>
-        <NavCreator     to={'/just_timer'}                      title={'Just Timer'}/>
-        <NavCreator     to={'/markdown_editor'}                 title={'Markdown Editor'}/>
-        <NavCreator     to={'/browser_tabs'}                    title={'Browser Tabs'}/>
-        <NavCreator     to={'/paper_rock_scissors'}             title={'RPS  ✊ 🤚 🖖'}/>
-        <NavCreator     to={'/infinite_image_gallery'}          title={'Infinite Gallery'}/>
-        <NavCreator     to={'/trivia'}                          title={'Trivia'}/>
-        <NavCreator     to={'/authentication/home'}             title={'Authentication'}/>
+        <NavCreator     to={'/home'                     }       title={'Home page'}/>
+        <NavCreator     to={'/pomodoro_timer'           }       title={'Pomodoro Timer'}/>
+        <NavCreator     to={'/just_timer'               }       title={'Just Timer'}/>
+        <NavCreator     to={'/markdown_editor'          }       title={'Markdown Editor'}/>
+        <NavCreator     to={'/browser_tabs'             }       title={'Browser Tabs'}/>
+        <NavCreator     to={'/paper_rock_scissors'      }       title={'RPS  ✊ 🤚 🖖'}/>
+        <NavCreator     to={'/infinite_image_gallery'   }       title={'Infinite Gallery'}/>
+        <NavCreator     to={'/trivia'                   }       title={'Trivia'}/>
+        <NavCreator     to={'/authentication/home'      }       title={'Authentication'}/>
         <hr/>
         <div className={css.moving_boxes_link}>
                 <a target='_blank' href="https://antonrufus.github.io/moving-boxes/">Moving boxes</a>
