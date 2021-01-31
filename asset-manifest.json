@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/multi-apps-project/static/css/main.c3c18e16.chunk.css",
-    "main.js": "/multi-apps-project/static/js/main.e402cd12.chunk.js",
-    "main.js.map": "/multi-apps-project/static/js/main.e402cd12.chunk.js.map",
-    "runtime-main.js": "/multi-apps-project/static/js/runtime-main.28245c1a.js",
-    "runtime-main.js.map": "/multi-apps-project/static/js/runtime-main.28245c1a.js.map",
-    "static/js/2.05c9eb7f.chunk.js": "/multi-apps-project/static/js/2.05c9eb7f.chunk.js",
-    "static/js/2.05c9eb7f.chunk.js.map": "/multi-apps-project/static/js/2.05c9eb7f.chunk.js.map",
-    "static/js/3.adf25a7c.chunk.js": "/multi-apps-project/static/js/3.adf25a7c.chunk.js",
-    "static/js/3.adf25a7c.chunk.js.map": "/multi-apps-project/static/js/3.adf25a7c.chunk.js.map",
+    "main.css": "/multi-apps-project/static/css/main.de4b31f1.chunk.css",
+    "main.js": "/multi-apps-project/static/js/main.2c0fdd9b.chunk.js",
+    "main.js.map": "/multi-apps-project/static/js/main.2c0fdd9b.chunk.js.map",
+    "runtime-main.js": "/multi-apps-project/static/js/runtime-main.7c4fcc24.js",
+    "runtime-main.js.map": "/multi-apps-project/static/js/runtime-main.7c4fcc24.js.map",
+    "static/js/2.d80d899e.chunk.js": "/multi-apps-project/static/js/2.d80d899e.chunk.js",
+    "static/js/2.d80d899e.chunk.js.map": "/multi-apps-project/static/js/2.d80d899e.chunk.js.map",
+    "static/js/3.515d35aa.chunk.js": "/multi-apps-project/static/js/3.515d35aa.chunk.js",
+    "static/js/3.515d35aa.chunk.js.map": "/multi-apps-project/static/js/3.515d35aa.chunk.js.map",
     "index.html": "/multi-apps-project/index.html",
-    "static/css/main.c3c18e16.chunk.css.map": "/multi-apps-project/static/css/main.c3c18e16.chunk.css.map",
-    "static/js/2.05c9eb7f.chunk.js.LICENSE.txt": "/multi-apps-project/static/js/2.05c9eb7f.chunk.js.LICENSE.txt"
+    "static/css/main.de4b31f1.chunk.css.map": "/multi-apps-project/static/css/main.de4b31f1.chunk.css.map",
+    "static/js/2.d80d899e.chunk.js.LICENSE.txt": "/multi-apps-project/static/js/2.d80d899e.chunk.js.LICENSE.txt",
+    "static/media/Spinner.1a45bc2c.svg": "/multi-apps-project/static/media/Spinner.1a45bc2c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.28245c1a.js",
-    "static/js/2.05c9eb7f.chunk.js",
-    "static/css/main.c3c18e16.chunk.css",
-    "static/js/main.e402cd12.chunk.js"
+    "static/js/runtime-main.7c4fcc24.js",
+    "static/js/2.d80d899e.chunk.js",
+    "static/css/main.de4b31f1.chunk.css",
+    "static/js/main.2c0fdd9b.chunk.js"
   ]
 }
