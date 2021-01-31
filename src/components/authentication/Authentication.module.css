@@ -129,6 +129,10 @@ h6 {
     margin-top: -20%;
 }
 
+.spinner{
+
+}
+
 @media (max-width: 1500px) {
     .page h2 {
         margin-left: 3vmax;

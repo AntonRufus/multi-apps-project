@@ -13,12 +13,12 @@ const Authentication = () => {
     console.log(user);
     console.log(getToken);
 
-    /*useEffect(() => {
+    useEffect(() => {
         getUserData();
     }, []);
 
-    const userDetailsByIdUrl = `https://${domain}/api/v2/users/${user.sub}`;
-    const userDetailsByIdUrl = `https://antonrufus.eu.auth0.com/api/v2/users/${user.sub}`;
+    // const userDetailsByIdUrl = `https://${domain}/api/v2/users/${user.sub}`;
+    // const userDetailsByIdUrl = `https://antonrufus.eu.auth0.com/api/v2/users/${user.sub}`;
 
     async function getUserData() {
        const token = await getToken();
@@ -32,7 +32,6 @@ const Authentication = () => {
        const data = await response.json();
        //we have data!
     }
-    */
 
     return (
         <div className={css.wrapper}>
