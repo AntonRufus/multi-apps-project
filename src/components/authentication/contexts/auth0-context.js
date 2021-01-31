@@ -20,8 +20,8 @@ export function Auth0Provider({children}) {
             const auth0 = await createAuth0Client({
                 domain: 'antonrufus.eu.auth0.com',
                 client_id: 'GDDE7o0r59yoAoX9nufbSWDr63hNEotG',
-                redirect_uri: window.location.origin,
-                // redirect_uri: window.location.href='https://antonrufus.github.io/multi-apps-project/#/authentication',
+                // redirect_uri: window.location.origin,
+                redirect_uri: window.location.href='https://antonrufus.github.io/multi-apps-project/#/authentication',
             });
 
             setAuth0Client(auth0);
