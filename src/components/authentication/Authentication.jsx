@@ -29,7 +29,7 @@ const Authentication = () => {
         });
 
         const data = await response.json();
-        //we have data
+        //we have data!
     }
 
     /*if (auth0.isAuthenticated) {
