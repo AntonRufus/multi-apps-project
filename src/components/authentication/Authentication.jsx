@@ -17,14 +17,14 @@ const Authentication = () => {
     }, []);
 
     // const userDetailsByIdUrl = `https://${domain}/api/v2/users/${user.sub}`;
-    const userDetailsByIdUrl = `https://antonrufus.eu.auth0.com/api/v2/users/${user.sub}`;
+    // const userDetailsByIdUrl = `https://antonrufus.eu.auth0.com/api/v2/users/${user.sub}`;
 
     async function getUserData() {
         const token = await getToken();
 
         // fetch('https://antonrufus.eu.auth0.com/api/v2/?api_token=mytokengoeshere');
-        const response = await fetch(userDetailsByIdUrl,{
-        // const response = await fetch(`https://antonrufus.eu.auth0.com/api/v2/`, {
+        // const response = await fetch(userDetailsByIdUrl,{
+        const response = await fetch(`https://antonrufus.eu.auth0.com/api/v2/`, {
             headers: {Authorization: `Bearer ${token}`},
         });
 
