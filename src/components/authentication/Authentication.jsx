@@ -11,26 +11,28 @@ const Authentication = () => {
     // const auth0 = useAuth0();
     const {getToken, user} = useAuth0();
     console.log(user);
+    console.log(getToken);
 
     /*useEffect(() => {
         getUserData();
-    }, []);*/
+    }, []);
 
-    // const userDetailsByIdUrl = `https://${domain}/api/v2/users/${user.sub}`;
-    // const userDetailsByIdUrl = `https://antonrufus.eu.auth0.com/api/v2/users/${user.sub}`;
+    const userDetailsByIdUrl = `https://${domain}/api/v2/users/${user.sub}`;
+    const userDetailsByIdUrl = `https://antonrufus.eu.auth0.com/api/v2/users/${user.sub}`;
 
-    /*async function getUserData() {
-        const token = await getToken();
+    async function getUserData() {
+       const token = await getToken();
 
-        // fetch('https://antonrufus.eu.auth0.com/api/v2/?api_token=mytokengoeshere');
-        // const response = await fetch(userDetailsByIdUrl,{
-        const response = await fetch(`https://antonrufus.eu.auth0.com/api/v2/`, {
-            headers: {Authorization: `Bearer ${token}`},
-        });
+       // fetch('https://antonrufus.eu.auth0.com/api/v2/?api_token=mytokengoeshere');
+       // const response = await fetch(userDetailsByIdUrl,{
+       const response = await fetch(`https://antonrufus.eu.auth0.com/api/v2/`, {
+           headers: {Authorization: `Bearer ${token}`},
+       });
 
-        const data = await response.json();
-        //we have data!
-    }*/
+       const data = await response.json();
+       //we have data!
+    }
+    */
 
     return (
         <div className={css.wrapper}>
