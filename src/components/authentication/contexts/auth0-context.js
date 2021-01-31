@@ -17,7 +17,7 @@ export function Auth0Provider({children}) {
         initAuth0();
 
         async function initAuth0() {
-                console.log(window.location.origin)
+                console.log(window.location.origin);
 
             const auth0 = await createAuth0Client({
                 domain: 'antonrufus.eu.auth0.com',
@@ -27,7 +27,7 @@ export function Auth0Provider({children}) {
                 redirect_uri: window.location.href='https://antonrufus.github.io/multi-apps-project/',
             },
 
-                console.log(window.location.origin)
+                console.log(window.location),
 
             );
 
