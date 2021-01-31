@@ -129,7 +129,7 @@ h6 {
     margin-top: -20%;
 }
 
-.spinner{
+.spinner {
 
 }
 
@@ -140,6 +140,11 @@ h6 {
 
     .page img {
         margin-bottom: 7%;
+        width: 30%;
+    }
+
+    .page img:hover {
+        width: 50%;
     }
 }
 
@@ -184,6 +189,7 @@ h6 {
 
     .page h2 {
         margin-left: 12vmax;
+        font-size: 2vmax;
     }
 }
 
@@ -205,6 +211,14 @@ h6 {
     .page h2 {
         margin-left: 15%;
     }
+/*
+    .page img {
+        width: 100px;
+    }
+
+    .page img:hover {
+        width: 150px;
+    }*/
 }
 
 @media (max-width: 600px) {
@@ -257,9 +271,14 @@ h6 {
         width: 19.5vmax;
     }
 
-    .page img {
+    /*.page img {
         margin-bottom: 5%;
+        width: 50px;
     }
+
+    .page img:hover {
+        width: 100px;
+    }*/
 
     .site_header {
         padding: 10px 0;

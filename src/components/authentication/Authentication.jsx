@@ -10,8 +10,7 @@ import PrivateRoute from "./components/PrivateRoute";
 const Authentication = () => {
     // const auth0 = useAuth0();
     const {getToken, user} = useAuth0();
-    console.log(user);
-    console.log(getToken);
+    // console.log(user);
 
     useEffect(() => {
         getUserData();
