@@ -24,7 +24,7 @@ const Authentication = () => {
 
         // fetch('https://antonrufus.eu.auth0.com/api/v2/?api_token=mytokengoeshere');
         // const response = await fetch(userDetailsByIdUrl,{
-        const response = await fetch(`https://antonrufus.eu.auth0.com/api/v2/`, {
+        const response = await fetch(`https://antonrufus.eu.auth0.com/api/v2/users/${user.sub}`, {
             headers: {Authorization: `Bearer ${token}`},
         });
 
