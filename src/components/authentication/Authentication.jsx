@@ -12,30 +12,24 @@ const Authentication = () => {
     const {getToken, user} = useAuth0();
     console.log(user);
 
-    useEffect(() => {
+    /*useEffect(() => {
         getUserData();
-    }, []);
+    }, []);*/
 
     // const userDetailsByIdUrl = `https://${domain}/api/v2/users/${user.sub}`;
     // const userDetailsByIdUrl = `https://antonrufus.eu.auth0.com/api/v2/users/${user.sub}`;
 
-    async function getUserData() {
+    /*async function getUserData() {
         const token = await getToken();
 
         // fetch('https://antonrufus.eu.auth0.com/api/v2/?api_token=mytokengoeshere');
         // const response = await fetch(userDetailsByIdUrl,{
-        const response = await fetch(`https://antonrufus.eu.auth0.com/api/v2/users/${user.sub}`, {
+        const response = await fetch(`https://antonrufus.eu.auth0.com/api/v2/`, {
             headers: {Authorization: `Bearer ${token}`},
         });
 
         const data = await response.json();
         //we have data!
-    }
-
-    /*if (auth0.isAuthenticated) {
-        return <AuthenticatedApp/>
-    }else  {
-        return <UnAuthenticatedApp/>
     }*/
 
     return (
