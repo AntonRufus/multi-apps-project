@@ -2,10 +2,12 @@ import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
 import css from "../Authentication.module.css";
 import {Auth0Context} from "../contexts/auth0-context";
+import {useAlert} from "react-alert";
 
 const SiteHeader = () => {
     // const auth0 = useContext(Auth0Context);
     const {isAuthenticated, login, logout, user} = useContext(Auth0Context);
+    const alert = useAlert();
 
     return (
         <div className={css.site_header}>
@@ -22,7 +24,7 @@ const SiteHeader = () => {
                 {!isAuthenticated && <button onClick={login}>Login</ button>}
                 { isAuthenticated && user && (
                     <>
-                        <button>{user.nickname}</button>
+                        <button onClick={()=>alert.show(`Hello ${user.nickname}`)}>{user.nickname}</button>
                         <button onClick={logout}>Logout</button>
                     </>
                 )}

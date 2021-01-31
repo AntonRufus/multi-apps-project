@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-    /*font-family: 'Calistoga', cursive;*/
+    font-family: 'Calistoga', cursive;
 }
 
 .site_header {
@@ -115,10 +115,11 @@ h6 {
 }
 
 .page img {
+    background: rgba(255, 255, 255, 0.25);
     border-radius: 30%;
     transition-duration: 1s;
     width: 50%;
-    margin-bottom: 10%;
+    margin-bottom: 11%;
 }
 
 .page img:hover {

@@ -65,6 +65,7 @@ export function Auth0Provider({children}) {
                 isAuthenticated, user, isLoading,
                 login: (...p) => auth0Client.loginWithRedirect(...p),
                 logout: (...p) => auth0Client.logout(...p),
+                getToken: (...p)=> auth0Client.getTokenSilently(...p),
             }}
         >
             {children}
