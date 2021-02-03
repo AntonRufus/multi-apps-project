@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Link, Redirect} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import css from "../Authentication.module.css";
 import {Auth0Context} from "../contexts/auth0-context";
 import {useAlert} from "react-alert";
@@ -22,10 +22,9 @@ const SiteHeader = () => {
                 {/*{!isAuthenticated && <button onClick={() =>  login()}>Login</button>}*/}
                 {/*{ isAuthenticated && <button onClick={() => logout()}>Logout</button>}*/}
                 {!isAuthenticated && <button onClick={login}>Login</ button>}
-                { isAuthenticated && <Redirect to="/authentication/dashboard"/>}
-                { isAuthenticated && user && (
+                {isAuthenticated && user && (
                     <>
-                        <button onClick={()=>alert.show(`Hello ${user.nickname}`)}>{user.nickname}</button>
+                        <button onClick={() => alert.show(`Hello ${user.nickname}`)}>{user.nickname}</button>
                         <button onClick={logout}>Logout</button>
                     </>
                 )}

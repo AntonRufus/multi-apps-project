@@ -19,8 +19,8 @@ export function Auth0Provider({children}) {
             const auth0 = await createAuth0Client({
                 domain: 'antonrufus.eu.auth0.com',
                 client_id: 'GDDE7o0r59yoAoX9nufbSWDr63hNEotG',
-                // redirect_uri: window.location.origin,
-                redirect_uri: window.location.href = 'https://antonrufus.github.io/multi-apps-project/#/authentication/home',
+                redirect_uri: window.location.origin,
+                // redirect_uri: window.location.href = 'https://antonrufus.github.io/multi-apps-project/#/authentication/home',
             });
 
             setAuth0Client(auth0);
@@ -35,23 +35,26 @@ export function Auth0Provider({children}) {
                 } catch (err) {
                     alert(err);
                 }
+
+                // window.location.replace("/multi-apps-project/#/authentication/home")
             }
 
             // is a user authenticated
             const isAuthenticated = await auth0.isAuthenticated();
+            setIsAuthenticated(isAuthenticated);
 
             // go grab the user
             if (isAuthenticated) {
                 const user = await auth0.getUser();
                 setUser(user);
                 // console.log(user);
-                setIsAuthenticated(isAuthenticated);
+                // setIsAuthenticated(isAuthenticated);     !!!!!
                 // console.log(isAuthenticated);
             }
 
             setIsLoading(false);
         }
-    }, [isLoading]);
+    }, []);
 
     if (isLoading) return <div className={css.spinner}>
         <img src={Spinner} alt=""/>
