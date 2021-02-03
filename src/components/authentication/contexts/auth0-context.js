@@ -36,7 +36,8 @@ export function Auth0Provider({children}) {
                     alert(err);
                 }
 
-                // window.location.replace("/multi-apps-project/#/authentication/home")
+                window.location.replace(window.location.pathname);
+                // window.location.replace("/multi-apps-project/#/authentication/home");
             }
 
             // is a user authenticated
@@ -48,7 +49,7 @@ export function Auth0Provider({children}) {
                 const user = await auth0.getUser();
                 setUser(user);
                 // console.log(user);
-                // setIsAuthenticated(isAuthenticated);     !!!!!
+                setIsAuthenticated(isAuthenticated);
                 // console.log(isAuthenticated);
             }
 
