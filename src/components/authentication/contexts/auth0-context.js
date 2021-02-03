@@ -20,7 +20,7 @@ export function Auth0Provider({children}) {
                 domain: 'antonrufus.eu.auth0.com',
                 client_id: 'GDDE7o0r59yoAoX9nufbSWDr63hNEotG',
                 // redirect_uri: window.location.origin,
-                redirect_uri: window.location.href = 'https://antonrufus.github.io/multi-apps-project/#/authentication/dashboard',
+                redirect_uri: window.location.href = 'https://antonrufus.github.io/multi-apps-project/#/authentication/home',
             });
 
             setAuth0Client(auth0);
@@ -51,7 +51,7 @@ export function Auth0Provider({children}) {
 
             setIsLoading(false);
         }
-    }, []);
+    }, [isLoading]);
 
     if (isLoading) return <div className={css.spinner}>
         <img src={Spinner} alt=""/>
