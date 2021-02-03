@@ -86,16 +86,17 @@ h6 {
 
 .page h2 {
     background: rgba(255, 255, 255, 0.9);
-    padding: 15px 30px;
+    padding: 2vmin 3vmin;
     border-radius: 50px;
     color: #25b75f;
     transform: rotate(-5deg) translateY(20px);
-    width: 30vmax;
+    width: 60vmin;
     bottom: 0;
     left: 0;
     font-size: 2.3vmax;
     line-height: 1;
-    margin-left: 0;
+    /*margin: 0 auto;*/
+    margin-left: -15vmin;
     position: absolute;
     transition-duration: 0.5s;
 }
@@ -118,15 +119,13 @@ h6 {
     background: rgba(255, 255, 255, 0.25);
     border-radius: 30%;
     transition-duration: 1s;
-    width: 50%;
-    margin-bottom: 11%;
+    width: 30vmin;
+    margin-bottom: 5vmin;
 }
 
 .page img:hover {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
-    width: 70%;
-    margin-top: -20%;
 }
 
 .spinner {
@@ -134,51 +133,12 @@ h6 {
 }
 
 @media (max-width: 1500px) {
-    .page h2 {
-        margin-left: 3vmax;
-    }
-
     .page img {
-        margin-bottom: 7%;
-        width: 30%;
+        width: 30vmin;
     }
 
     .page img:hover {
-        width: 50%;
-    }
-}
-
-@media (max-width: 1400px) {
-    .page h2 {
-        margin-left: 4vmax;
-    }
-}
-
-@media (max-width: 1300px) {
-    .page h2 {
-        margin-left: 6vmax;
-    }
-}
-
-@media (max-width: 1200px) {
-    .page h2 {
-        margin-left: 8vmax;
-    }
-
-    .page img {
-        margin-bottom: 5%;
-    }
-}
-
-@media (max-width: 1150px) {
-    .page h2 {
-        margin-left: 9vmax;
-    }
-}
-
-@media (max-width: 1050px) {
-    .page h2 {
-        margin-left: 11vmax;
+        width: 30vmin;
     }
 }
 
@@ -188,8 +148,13 @@ h6 {
     }
 
     .page h2 {
-        margin-left: 12vmax;
+        margin-left: -5vmin;
         font-size: 2vmax;
+        width: 40vmin;
+    }
+
+    .page img {
+        margin-bottom: 5%;
     }
 }
 
@@ -207,18 +172,6 @@ h6 {
     .page {
         min-width: 40vmax;
     }
-
-    .page h2 {
-        margin-left: 15%;
-    }
-/*
-    .page img {
-        width: 100px;
-    }
-
-    .page img:hover {
-        width: 150px;
-    }*/
 }
 
 @media (max-width: 600px) {
@@ -231,8 +184,9 @@ h6 {
     }
 
     .page h2 {
-        margin-left: 0;
         padding: 10px;
+        width: 45vmin;
+        margin-left: -8vmin;
     }
 
     .page img {
@@ -241,7 +195,6 @@ h6 {
 
     .site_header {
         padding: 10px 5px;
-        /*margin-bottom: -77px;*/
     }
 }
 
@@ -268,17 +221,9 @@ h6 {
 
     .page h2 {
         font-size: 1.3vmax;
-        width: 19.5vmax;
+        width: 40vmin;
+        margin-left: -5.5vmin;
     }
-
-    /*.page img {
-        margin-bottom: 5%;
-        width: 50px;
-    }
-
-    .page img:hover {
-        width: 100px;
-    }*/
 
     .site_header {
         padding: 10px 0;
