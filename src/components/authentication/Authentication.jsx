@@ -1,11 +1,11 @@
 import React, {useEffect} from "react";
-import {HashRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter as Router, Switch} from 'react-router-dom';
 import css from "./Authentication.module.css"
 import SiteHeader from "./components/SiteHeader";
 import HomeAuth from "./components/HomeAuth";
 import Dashboard from "./components/Dashboard";
 import {useAuth0} from "./contexts/auth0-context";
-import PrivateRoute from "./components/PrivateRoute";
+import PrivateRoute, {HomeRoute} from "./components/PrivateRoute";
 
 const Authentication = () => {
     const {getToken} = useAuth0();
@@ -36,9 +36,9 @@ const Authentication = () => {
                         <PrivateRoute path="/authentication/dashboard">
                             <Dashboard/>
                         </PrivateRoute>
-                        <Route path="/authentication/home">
+                        <HomeRoute path="/authentication/home">
                             <HomeAuth/>
-                        </Route>
+                        </HomeRoute>
                     </Switch>
                 </div>
             </Router>
