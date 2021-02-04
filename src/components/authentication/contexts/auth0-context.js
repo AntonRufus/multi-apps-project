@@ -20,8 +20,8 @@ export function Auth0Provider({children}) {
                 domain: 'antonrufus.eu.auth0.com',
                 client_id: 'GDDE7o0r59yoAoX9nufbSWDr63hNEotG',
                 // redirect_uri: window.location.origin,       // to "https://antonrufus.github.io"
-                // redirect_uri: window.location.href = 'https://antonrufus.github.io/multi-apps-project/#/authentication/home',   // to auth app's homepage
-                redirect_uri: window.location.href = 'https://antonrufus.github.io/multi-apps-project/',   // to main homepage
+                redirect_uri: window.location.href = 'https://antonrufus.github.io/multi-apps-project/#/authentication/home',   // to auth app's homepage
+                // redirect_uri: window.location.href = 'https://antonrufus.github.io/multi-apps-project/',   // to main homepage
             });
 
             setAuth0Client(auth0);
