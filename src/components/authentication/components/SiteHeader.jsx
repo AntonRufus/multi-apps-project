@@ -21,18 +21,18 @@ const SiteHeader = () => {
                                             {/*{!isAuthenticated && <button onClick={() =>  login()}>Login</button>}
                                             { isAuthenticated && <button onClick={() => logout()}>Logout</button>}*/}
 
-                {/*{!isAuthenticated && <button onClick={login}>Login</button>}
+                {!isAuthenticated && <button onClick={login}>Login</button>}
                 { isAuthenticated && user && (
                     <>
                         <button onClick={()=>alert.show(`Hello ${user.nickname}`)}>{user.nickname}</button>
                         <button onClick={logout}>Logout</button>
                     </>
-                )}*/}
+                )}
 
-                            {!isAuthenticated && user ? <button onClick={login}>Login</button>:(<>
+                            {/*{!isAuthenticated ? <button onClick={login}>Login</button>:(<>
                                     <button onClick={()=>alert.show(`Hello ${user.nickname}`)}>{user.nickname}</button>
                                     <button onClick={logout}>Logout</button></>
-                            )}
+                            )}*/}
 
             </div>
         </div>
