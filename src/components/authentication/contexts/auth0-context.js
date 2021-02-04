@@ -51,7 +51,7 @@ export function Auth0Provider({children}) {
                 // setIsAuthenticated(isAuthenticated);                                     //!!!!!! line #45
             }
 
-            window.setTimeout(()=>setIsLoading(false),3000);
+            setIsLoading(false);
         }
     }, []);
 
