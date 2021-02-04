@@ -20,6 +20,7 @@ const SiteHeader = () => {
             <div>
                                             {/*{!isAuthenticated && <button onClick={() =>  login()}>Login</button>}
                                             { isAuthenticated && <button onClick={() => logout()}>Logout</button>}*/}
+
                 {!isAuthenticated && <button onClick={login}>Login</button>}
                 { isAuthenticated && user && (
                     <>
