@@ -38,7 +38,8 @@ export function Auth0Provider({children}) {
                 }
 
                 // window.location.replace(window.location.pathname);                       //!!!!!!
-                window.location.href.replace('https://antonrufus.github.io/multi-apps-project/#/authentication/home');
+                window.location.replace('https://antonrufus.github.io/multi-apps-project/#/authentication/home');
+                window.location.reload('https://antonrufus.github.io/multi-apps-project/#/authentication/home');
             }
 
             // is a user authenticated
