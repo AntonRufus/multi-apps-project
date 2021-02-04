@@ -185,8 +185,9 @@ h6 {
 
     .page h2 {
         padding: 10px;
-        width: 45vmin;
-        margin-left: -8vmin;
+        width: 35vmin;
+        margin-left: -3vmin;
+        font-size: 1.5vmax;
     }
 
     .page img {
@@ -221,8 +222,6 @@ h6 {
 
     .page h2 {
         font-size: 1.3vmax;
-        width: 40vmin;
-        margin-left: -5.5vmin;
     }
 
     .site_header {
