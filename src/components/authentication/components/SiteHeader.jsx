@@ -5,7 +5,6 @@ import {Auth0Context} from "../contexts/auth0-context";
 import {useAlert} from "react-alert";
 
 const SiteHeader = () => {
-    // const auth0 = useContext(Auth0Context);
     const {isAuthenticated, login, logout, user} = useContext(Auth0Context);
     const alert = useAlert();
 
@@ -19,12 +18,12 @@ const SiteHeader = () => {
 
             {/* stuff on the right */}
             <div>
-                {/*{!isAuthenticated && <button onClick={() =>  login()}>Login</button>}*/}
-                {/*{ isAuthenticated && <button onClick={() => logout()}>Logout</button>}*/}
+                                            {/*{!isAuthenticated && <button onClick={() =>  login()}>Login</button>}
+                                            { isAuthenticated && <button onClick={() => logout()}>Logout</button>}*/}
                 {!isAuthenticated && <button onClick={login}>Login</ button>}
-                {isAuthenticated && user && (
+                { isAuthenticated && user && (
                     <>
-                        <button onClick={() => alert.show(`Hello ${user.nickname}`)}>{user.nickname}</button>
+                        <button onClick={()=>alert.show(`Hello ${user.nickname}`)}>{user.nickname}</button>
                         <button onClick={logout}>Logout</button>
                     </>
                 )}
