@@ -19,8 +19,9 @@ export function Auth0Provider({children}) {
             const auth0 = await createAuth0Client({
                 domain: 'antonrufus.eu.auth0.com',
                 client_id: 'GDDE7o0r59yoAoX9nufbSWDr63hNEotG',
-                // redirect_uri: window.location.origin,       // to "https://antonrufus.github.io/multi-apps-project"
-                redirect_uri: window.location.href = 'https://antonrufus.github.io/multi-apps-project/#/authentication/home',   // to auth app's homepage
+                // redirect_uri: window.location.origin,       // to "https://antonrufus.github.io"
+                // redirect_uri: window.location.href = 'https://antonrufus.github.io/multi-apps-project/#/authentication/home',   // to auth app's homepage
+                redirect_uri: window.location.href = 'https://antonrufus.github.io/multi-apps-project/',   // to main homepage
             });
 
             setAuth0Client(auth0);
@@ -36,10 +37,7 @@ export function Auth0Provider({children}) {
                     alert(err);
                 }
 
-                // window.location.replace(window.location.pathname);                       //!!!!!!
-                window.location.replace('https://antonrufus.github.io/multi-apps-project/#/authentication/home');
-                window.location.reload('https://antonrufus.github.io/multi-apps-project/#/authentication/home');
-                // debugger;
+                window.location.replace(window.location.pathname + '#/authentication/home');         //!!!!!!
             }
 
             // is a user authenticated
@@ -50,7 +48,7 @@ export function Auth0Provider({children}) {
             if (isAuthenticated) {
                 const user = await auth0.getUser();
                 setUser(user);
-                                        // setIsAuthenticated(isAuthenticated);             //!!!!!! line #45
+                // setIsAuthenticated(isAuthenticated);                                     //!!!!!! line #45
             }
 
             setIsLoading(false);
