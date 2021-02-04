@@ -15,6 +15,8 @@ export function Auth0Provider({children}) {
     useEffect(() => {
         initAuth0();
 
+        setIsLoading(true);                                                                             //!!!!!!!
+
         async function initAuth0() {
             const auth0 = await createAuth0Client({
                 domain: 'antonrufus.eu.auth0.com',
@@ -55,10 +57,7 @@ export function Auth0Provider({children}) {
         }
     }, []);
 
-    if (isLoading) return <div className={css.spinner}>
-        <img src={Spinner} alt=""/>
-        {/*<p>Loading...</p>*/}
-    </div>;
+    if (isLoading) return <div className={css.spinner}><img src={Spinner} alt=""/>{/*<p>Loading...</p>*/}</div>;
 
     return (
         <Auth0Context.Provider
