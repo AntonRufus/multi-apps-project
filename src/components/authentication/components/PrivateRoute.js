@@ -11,7 +11,5 @@ export default function PrivateRoute({children, ...rest}) {
 }
 
 export function HomeRoute({children, ...rest}) {
-    const {isAuthenticated, user} = useAuth0();
-
-    if (isAuthenticated && user) return <Route {...rest}>{children}</Route>;
+    return <Route {...rest}>{children}</Route>;
 }
