@@ -13,8 +13,6 @@ export function Auth0Provider({children}) {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        setIsLoading(true);                                                                             //!!!!!!!
-
         initAuth0();
 
         async function initAuth0() {
