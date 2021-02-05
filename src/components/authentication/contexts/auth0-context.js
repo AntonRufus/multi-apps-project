@@ -49,10 +49,9 @@ export function Auth0Provider({children}) {
                 const user = await auth0.getUser();
                 setUser(user);
                 // setIsAuthenticated(isAuthenticated);                                     //!!!!!! line #45
-                    if (user) setIsLoading(false);
             }
 
-            // setIsLoading(false);
+            setIsLoading(false);
         }
     }, []);
 

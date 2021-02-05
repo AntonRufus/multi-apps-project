@@ -9,3 +9,13 @@ export default function PrivateRoute({children, ...rest}) {
 
     return <Route {...rest}>{children}</Route>;
 }
+
+export function HomeRoute({children, ...rest}) {
+    const {isAuthenticated, user} = useAuth0();
+
+    if (!isAuthenticated && !user) {
+        return <Route {...rest}>{children}</Route>
+    } else {
+        return <Route  path="/authentication/dashboard"><Dashboard/></Route>
+    }
+}
