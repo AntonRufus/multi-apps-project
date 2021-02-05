@@ -1,6 +1,7 @@
 import React from "react";
 import {Route} from "react-router-dom";
 import {useAuth0} from "../contexts/auth0-context";
+import Dashboard from "./Dashboard";
 
 export default function PrivateRoute({children, ...rest}) {
     const {isAuthenticated, user, login} = useAuth0();
