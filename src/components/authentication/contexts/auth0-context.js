@@ -13,9 +13,9 @@ export function Auth0Provider({children}) {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        initAuth0();
-
         setIsLoading(true);                                                                             //!!!!!!!
+
+        initAuth0();
 
         async function initAuth0() {
             const auth0 = await createAuth0Client({
@@ -51,9 +51,10 @@ export function Auth0Provider({children}) {
                 const user = await auth0.getUser();
                 setUser(user);
                 // setIsAuthenticated(isAuthenticated);                                     //!!!!!! line #45
+                    if (user) setIsLoading(false);
             }
 
-            setIsLoading(false);
+            // setIsLoading(false);
         }
     }, []);
 
