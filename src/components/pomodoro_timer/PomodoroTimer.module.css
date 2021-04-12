@@ -1,6 +1,6 @@
 .wrapper {
     padding: 12vmax;
-    min-height: 95vh;
+    min-height: 100vh;
     min-width: 65vmax;
     display: flex;
     flex-direction: column;

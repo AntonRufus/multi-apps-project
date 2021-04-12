@@ -4,13 +4,13 @@
     align-items: center;
     justify-content: center;
     color: #ce7e15;
-    min-height: 95vh;
+    min-height: 100vh;
     min-width: 65vmax;
     padding: 2vmax 5vmax;
     border-radius: 10px;
     transition-duration: 0.7s;
     text-align: center;
-    background: #3b414c;
+    /*background: #3b414c;*/
     max-width: 1200px;
 }
 

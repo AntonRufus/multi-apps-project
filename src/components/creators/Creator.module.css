@@ -65,18 +65,18 @@
 }
 
 .bgc:hover a {
-    background-color: #453e34;
+    background-color: rgba(69, 62, 52, 0.5);
 }
 
 .isActive {
-    background-color: #342f28;
+    background-color: rgba(51, 46, 39, 0.5);
     margin-top: -14px;
     margin-bottom: -15px;
 }
 
 .bgc a:active {
-    background-color: #b19601;
-    color: saddlebrown;
+    background-color: rgba(176, 150, 2, 0.5);
+    color: black;
 }
 
 .moving_boxes_link {
@@ -87,6 +87,7 @@
     text-align: center;
     height: 50px;
     padding-top: 11px;
+    padding-left: 14%;
     box-shadow: 0 0 4vmax 2.5vmax rgba(26, 59, 121, 0.4);
     transition-duration: 1s;
 }
