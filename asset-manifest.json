@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/multi-apps-project/static/css/main.51af0403.chunk.css",
+    "main.css": "/multi-apps-project/static/css/main.8f1bb707.chunk.css",
     "main.js": "/multi-apps-project/static/js/main.1890b7d6.chunk.js",
     "main.js.map": "/multi-apps-project/static/js/main.1890b7d6.chunk.js.map",
     "runtime-main.js": "/multi-apps-project/static/js/runtime-main.7c4fcc24.js",
@@ -10,7 +10,7 @@
     "static/js/3.515d35aa.chunk.js": "/multi-apps-project/static/js/3.515d35aa.chunk.js",
     "static/js/3.515d35aa.chunk.js.map": "/multi-apps-project/static/js/3.515d35aa.chunk.js.map",
     "index.html": "/multi-apps-project/index.html",
-    "static/css/main.51af0403.chunk.css.map": "/multi-apps-project/static/css/main.51af0403.chunk.css.map",
+    "static/css/main.8f1bb707.chunk.css.map": "/multi-apps-project/static/css/main.8f1bb707.chunk.css.map",
     "static/js/2.9128dbba.chunk.js.LICENSE.txt": "/multi-apps-project/static/js/2.9128dbba.chunk.js.LICENSE.txt",
     "static/js/main.1890b7d6.chunk.js.LICENSE.txt": "/multi-apps-project/static/js/main.1890b7d6.chunk.js.LICENSE.txt",
     "static/media/Spinner.9e33932b.svg": "/multi-apps-project/static/media/Spinner.9e33932b.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.7c4fcc24.js",
     "static/js/2.9128dbba.chunk.js",
-    "static/css/main.51af0403.chunk.css",
+    "static/css/main.8f1bb707.chunk.css",
     "static/js/main.1890b7d6.chunk.js"
   ]
 }
