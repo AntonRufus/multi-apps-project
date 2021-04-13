@@ -26,19 +26,23 @@ const Home = () => {
         padding: ${padding};
         opacity: ${opacity};
         color: ${color};
+        
         @media (max-width: 1200px) {
         margin: 1vmax;
         font-size:  3vmax;
-        //padding: auto;
+        //padding: 5vmax;
         }
+        
         @media (max-width: 905px) {
         //padding: 8vmax;
         }
+        
         @media (max-width: 605px) {
         //padding: 5vmax;
         }
+        
         @media (max-width: 400px) {
-        padding: 15vmax;
+        padding: 25vmax 5vmax;
         }
 `;
 
