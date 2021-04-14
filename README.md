@@ -2,7 +2,7 @@
 
 ## The main purpose of the app to combine small React applications into one big project. 
 
-#### https://antonrufus.github.io/social-network/
+#### https://github.com/AntonRufus/multi-apps-project/
 
 ## Tech stack:
 
