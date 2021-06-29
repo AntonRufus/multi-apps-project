@@ -1,38 +1,46 @@
 .App_header {
-    background-image: linear-gradient(to left bottom, mediumblue,#999, #555, darkblue, #111, #000);
-    min-height: 100vh;
-    display: flex;
-    /*align-items: center;*/
-    font-size: calc(10px + 2vmin);
-    color: white;
+  background-image: linear-gradient(
+    to left bottom,
+    mediumblue,
+    #999,
+    #555,
+    darkblue,
+    #111,
+    #000
+  );
+  min-height: 100vh;
+  display: flex;
+  /*align-items: center;*/
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App_header a {
-    color: wheat;
-    display: flex;
-    justify-content: space-between;
+  color: wheat;
+  display: flex;
+  justify-content: space-between;
 }
 
 .Nav_bar {
-    margin: 0 25px;
+  margin: 0 25px;
 }
 
 .Nav_bar a:hover {
-    transition-duration: 0.5s;
-    color: gold;
+  transition-duration: 0.5s;
+  color: gold;
 }
 
 .content {
-    margin: auto;
+  margin: auto;
 }
 
 @media (max-width: 1000px) {
-    .content {
-        /*margin: 0;*/
-        /*min-width: 25vmax;*/
-    }
+  .content {
+    /*margin: 0;*/
+    /*min-width: 25vmax;*/
+  }
 
-    .Nav_bar {
-        margin: 0;
-    }
+  .Nav_bar {
+    margin: 0;
+  }
 }

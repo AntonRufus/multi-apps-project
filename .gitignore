@@ -10,7 +10,6 @@
 
 # production
 /build
-src/bgc_images_url.css
 
 # misc
 .DS_Store
@@ -25,3 +24,9 @@ yarn-error.log*
 
 # our custom stuff
 .env
+
+#folders
+/src/components/todo
+
+#files
+src/bgc_images_url.css
