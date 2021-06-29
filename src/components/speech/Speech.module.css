@@ -1,0 +1,131 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  min-height: 100vh;
+  min-width: 65vmax;
+  padding: 2vmax 5vmax;
+  border-radius: 10px;
+  transition-duration: 0.7s;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.wrapper:hover {
+  background-color: rgba(0, 255, 255, 0.2);
+  background-image: url("https://www.pngarts.com/files/2/Black-Abstract-Lines-PNG-Image-Background.png");
+}
+
+.wrapper h2 {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.timer input {
+  background-color: #acacac;
+  border: 2px solid #ebebeb;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5vmax;
+  margin: 1vmax 1vmax 1vmax 40px;
+  width: 40vw;
+}
+
+.timer .number {
+  width: 7vw;
+  text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.timer input::-webkit-outer-spin-button,
+.timer input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.timer input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.buttons button {
+  margin: 1vmax;
+  outline: none;
+  border: none;
+  font-size: 1.5vmax;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.buttons button:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.add_button {
+  background-color: #0fe2d7b4;
+  border: 2px solid #000;
+  border-radius: 5px;
+  color: #000;
+  font-size: 2vmax;
+  margin: 10px 0;
+  padding: 5px 20px;
+  transition: 0.3s ease all;
+}
+
+.add_button:hover {
+  background: #111;
+  color: #eee;
+}
+
+.buttons .start {
+  background-color: rgba(13, 133, 13, 0.651);
+}
+
+.buttons .start:hover {
+  background-color: rgba(13, 133, 13, 1);
+}
+
+.buttons .pause {
+  background-color: rgba(133, 121, 13, 0.651);
+}
+
+.buttons .pause:hover {
+  background-color: rgba(133, 121, 13, 1);
+}
+
+.buttons .stop {
+  background-color: rgba(156, 11, 11, 0.651);
+}
+
+.buttons .stop:hover {
+  background-color: rgba(156, 11, 11, 1);
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    min-height: 48vh;
+    padding: 0.5vmax 0.5vmax;
+    /* max-width: 255px; */
+    min-width: 20vmax;
+  }
+
+  input.number {
+    width: 8vw;
+  }
+
+  input.number,
+  input.text {
+    margin: 1vmax;
+    padding: 5px 2px;
+  }
+  input.text {
+    padding-left: 5px;
+  }
+}
