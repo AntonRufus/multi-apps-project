@@ -197,6 +197,7 @@
 
   .image_grid {
     grid-gap: 1px;
+    grid-auto-rows: minmax(50px, 150px);
   }
 
   .image {
