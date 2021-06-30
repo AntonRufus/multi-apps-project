@@ -13,6 +13,7 @@ import Authentication from "./components/authentication/Authentication";
 import { Auth0Provider } from "./components/authentication/contexts/auth0-context";
 // import Todo from "./components/todo/Todo.jsx";
 import Speech from "./components/speech/Speech";
+import CalendarPicker from "./components/calendar_picker/CalendarPicker";
 
 const AppRouter = () => (
   <Switch>
@@ -56,6 +57,9 @@ const AppRouter = () => (
     </Route> */}
     <Route path="/speech">
       <Speech />
+    </Route>
+    <Route path="/calendar_picker">
+      <CalendarPicker />
     </Route>
   </Switch>
 );

@@ -18,6 +18,7 @@ const NavBar = () => (
     <NavCreator to={"/trivia"} title={"Trivia"} />
     <NavCreator to={"/authentication/home"} title={"Authentication"} />
     <NavCreator to={"/speech"} title={"Speech"} />
+    <NavCreator to={"/calendar_picker"} title={"Calendar Picker"} />
     <hr />
     <div className={css.moving_boxes_link}>
       <a

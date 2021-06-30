@@ -1,12 +1,13 @@
 # Multi apps project
 
-## The main purpose of the app to combine small React applications into one big project. 
+## The main purpose of the app to combine small React applications into one big project.
 
 #### https://github.com/AntonRufus/multi-apps-project/
 
 ## Tech stack:
 
-   ### React:    
+### React:
+
     - Auth0-React
     - Hooks
     - Infinite-Scroll-Component
@@ -16,28 +17,33 @@
     - Trivia API
     - Unsplash API
 
-   ### JavaScript:
+### JavaScript:
+
     - Async / await
     - Lodash.shuffle
     - Promise
 
-   ### REST API:
+### REST API:
+
     - Fetch
 
-   ### HTML:  
+### HTML:
+
     - Canvas
 
-  ### CSS:
+### CSS:
+
     - CSS modules
     - Emotion
     - Grid
+    - Flexbox
+    - Styled Components
 
-## Feel free to contact me via LinkedIn: 
+## Feel free to contact me via LinkedIn:
 
 #### https://www.linkedin.com/in/anton-zhyvotovskyi/
 
-
---------
+---
 
 # Getting Started with Create React App
 
