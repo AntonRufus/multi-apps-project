@@ -14,6 +14,8 @@
     - React-Alert
     - React-Markdown
     - React-Router-DOM
+    - React-Timer-Hook
+    - React-Speech-Kit
     - Trivia API
     - Unsplash API
 
