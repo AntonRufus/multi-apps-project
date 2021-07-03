@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/multi-apps-project/static/css/main.474c79a3.chunk.css",
-    "main.js": "/multi-apps-project/static/js/main.9adfa4f3.chunk.js",
-    "main.js.map": "/multi-apps-project/static/js/main.9adfa4f3.chunk.js.map",
+    "main.css": "/multi-apps-project/static/css/main.da566043.chunk.css",
+    "main.js": "/multi-apps-project/static/js/main.f7340319.chunk.js",
+    "main.js.map": "/multi-apps-project/static/js/main.f7340319.chunk.js.map",
     "runtime-main.js": "/multi-apps-project/static/js/runtime-main.44b1e880.js",
     "runtime-main.js.map": "/multi-apps-project/static/js/runtime-main.44b1e880.js.map",
     "static/js/2.099570f9.chunk.js": "/multi-apps-project/static/js/2.099570f9.chunk.js",
@@ -10,15 +10,25 @@
     "static/js/3.36120f26.chunk.js": "/multi-apps-project/static/js/3.36120f26.chunk.js",
     "static/js/3.36120f26.chunk.js.map": "/multi-apps-project/static/js/3.36120f26.chunk.js.map",
     "index.html": "/multi-apps-project/index.html",
-    "static/css/main.474c79a3.chunk.css.map": "/multi-apps-project/static/css/main.474c79a3.chunk.css.map",
+    "static/css/main.da566043.chunk.css.map": "/multi-apps-project/static/css/main.da566043.chunk.css.map",
     "static/js/2.099570f9.chunk.js.LICENSE.txt": "/multi-apps-project/static/js/2.099570f9.chunk.js.LICENSE.txt",
-    "static/js/main.9adfa4f3.chunk.js.LICENSE.txt": "/multi-apps-project/static/js/main.9adfa4f3.chunk.js.LICENSE.txt",
-    "static/media/Spinner.9e33932b.svg": "/multi-apps-project/static/media/Spinner.9e33932b.svg"
+    "static/js/main.f7340319.chunk.js.LICENSE.txt": "/multi-apps-project/static/js/main.f7340319.chunk.js.LICENSE.txt",
+    "static/media/Spinner.9e33932b.svg": "/multi-apps-project/static/media/Spinner.9e33932b.svg",
+    "static/media/Authentication.module.css": "/multi-apps-project/static/media/auth2.8aa0f754.jfif",
+    "static/media/BrowserTabs.module.css": "/multi-apps-project/static/media/browser.e49947b2.png",
+    "static/media/calendar.4dd2b25a.png": "/multi-apps-project/static/media/calendar.4dd2b25a.png",
+    "static/media/InfiniteImageGallery.module.css": "/multi-apps-project/static/media/infinite.b6122c35.png",
+    "static/media/MarkdownEditor.module.css": "/multi-apps-project/static/media/markdown.dbfc3448.png",
+    "static/media/PaperRockScissors.module.css": "/multi-apps-project/static/media/paper.f493694b.png",
+    "static/media/PomodoroTimer.module.css": "/multi-apps-project/static/media/pomodoro.dcfa38e0.png",
+    "static/media/Speech.module.css": "/multi-apps-project/static/media/speech.6e8ae8ca.png",
+    "static/media/JustTimer.module.css": "/multi-apps-project/static/media/timer.ef67a55e.png",
+    "static/media/Trivia.module.css": "/multi-apps-project/static/media/trivia.25c26965.png"
   },
   "entrypoints": [
     "static/js/runtime-main.44b1e880.js",
     "static/js/2.099570f9.chunk.js",
-    "static/css/main.474c79a3.chunk.css",
-    "static/js/main.9adfa4f3.chunk.js"
+    "static/css/main.da566043.chunk.css",
+    "static/js/main.f7340319.chunk.js"
   ]
 }
