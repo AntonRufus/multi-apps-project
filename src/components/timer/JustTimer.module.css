@@ -1,145 +1,146 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #ce7e15;
-    min-height: 100vh;
-    min-width: 65vmax;
-    padding: 5vmax;
-    border-radius: 10px;
-    transition-duration: 0.7s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ce7e15;
+  min-height: 100vh;
+  min-width: 65vmax;
+  padding: 5vmax;
+  border-radius: 10px;
+  transition-duration: 0.7s;
 }
 
 .wrapper:hover {
-    background-color: #1f403d;
-    background-image: url("https://www.pngarts.com/files/4/Dot-PNG-Image-Transparent.png");
+  background-color: #1f403d;
+  background-image: url("https://www.pngarts.com/files/4/Dot-PNG-Image-Transparent.png");
 }
 
 h2 {
-    color: #33c799;
-    font-size: 3vmax;
-    text-align: center;
-    margin: 0;
+  color: #33c799;
+  font-size: 3vmax;
+  text-align: center;
+  margin: 0;
 }
 
-input {
-    background-color: #acacac;
-    border: 2px solid #ebebeb;
-    border-radius: 5px;
-    padding-left: 5px;
-    font-size: 1.5vmax;
-    margin: 1vmax 1vmax 1vmax 40px;
+.timeSet input {
+  background-color: #acacac;
+  border: 2px solid #ebebeb;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 1.5vmax;
+  margin: 1vmax 1vmax 1vmax 40px;
 }
 
 .timer {
-    margin: 5vmax;
-    padding: 0;
-    color: #3eadce;
-    font-size: 9vmax;
+  margin: 5vmax;
+  padding: 0;
+  color: #3eadce;
+  font-size: 9vmax;
 }
 
 .buttons button {
-    margin: 1vmax;
-    outline: none;
-    border: none;
-    font-size: 1.5vmax;
-    background: #f7fca0;
-    color: #222;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    padding: 15px 30px;
-    cursor: pointer;
-    transition: 0.3s ease all;
+  margin: 1vmax;
+  outline: none;
+  border: none;
+  font-size: 1.5vmax;
+  background: #f7fca0;
+  color: #222;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.3s ease all;
 }
 
 .buttonSum {
-    color: #333;
+  color: #333;
 }
 .buttonSum:hover {
-    color: #333;
+  color: #333;
 }
 
-.buttons button:hover, .buttonSum:hover {
-    border-radius: 10px;
-    background: #f5f8ca;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
+.buttons button:hover,
+.buttonSum:hover {
+  border-radius: 10px;
+  background: #f5f8ca;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
 .buttons button:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .timeSetBlock {
-    position: center;
-    display: block;
-    max-width: 25vmax;
+  position: center;
+  display: block;
+  max-width: 25vmax;
 }
 
 .timeSet {
-    display: grid;
-    grid-template-rows: 4vmax 1vmax;
-    grid-template-columns: 8vmax 15vmax;
+  display: grid;
+  grid-template-rows: 4vmax 1vmax;
+  grid-template-columns: 8vmax 15vmax;
 }
 
 .timeSet span {
-    margin: 1vmax;
-    padding: 0.2vmax;
-    font-size: 1.7vmax;
+  margin: 1vmax;
+  padding: 0.2vmax;
+  font-size: 1.7vmax;
 }
 
 .buttonSum {
-    margin-left: 7vmax;
-    font-size: 1.7vmax;
-    border: 1.5px solid white;
-    border-radius: 5px;
-    background-color: #d4d4d4;
-    transition-duration: 0.5s;
+  margin-left: 7vmax;
+  font-size: 1.7vmax;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  background-color: #d4d4d4;
+  transition-duration: 0.5s;
 }
 
 @media (max-width: 1000px) {
-    .wrapper {
-        margin: 1vmax;
-        min-width: 25vmax;
-        min-height: 65vh;
-        padding: 0;
-    }
+  .wrapper {
+    margin: 1vmax;
+    min-width: 25vmax;
+    min-height: 65vh;
+    padding: 0;
+  }
 
-    .timer {
-        margin-left: 3vmax;
-        margin-right: 3vmax;
-        font-size: 7vmax;
-    }
+  .timer {
+    margin-left: 3vmax;
+    margin-right: 3vmax;
+    font-size: 7vmax;
+  }
 }
 
 @media (max-width: 800px) {
-    .wrapper {
-        margin: 1vmax;
-        min-width: 25vmax;
-        min-height: 45vh;
-        padding: 0;
-    }
+  .wrapper {
+    margin: 1vmax;
+    min-width: 25vmax;
+    min-height: 45vh;
+    padding: 0;
+  }
 
-    .timer {
-        margin-left: 2vmax;
-        margin-right: 2vmax;
-        font-size: 5vmax;
-    }
+  .timer {
+    margin-left: 2vmax;
+    margin-right: 2vmax;
+    font-size: 5vmax;
+  }
 
-    .wrapper h2 {
-        font-size: 2vmax;
-    }
+  .wrapper h2 {
+    font-size: 2vmax;
+  }
 
-    .buttons button {
-        font-size: 2vmax;
-        padding: 10px 20px;
-    }
+  .buttons button {
+    font-size: 2vmax;
+    padding: 10px 20px;
+  }
 
-    input {
-        border-radius: 5px;
-        padding-left: 5px;
-        font-size: 1.5vmax;
-        margin: 0.5vmax 0.5vmax 0.5vmax 40px;
-    }
+  input {
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 1.5vmax;
+    margin: 0.5vmax 0.5vmax 0.5vmax 40px;
+  }
 }

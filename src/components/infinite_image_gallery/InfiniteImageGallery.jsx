@@ -41,7 +41,7 @@ const InfiniteImageGallery = () => {
   // return an error if there is no access key
   if (!accessKey) {
     return (
-      <a href="https://unsplash.com/developers" className={css.error}>
+      <a href="https://unsplash.com/developers" className={css.errorUnsplash}>
         Required: Get Your Unsplash API Key First
       </a>
     );
@@ -66,7 +66,7 @@ const InfiniteImageGallery = () => {
     apiUrl += `&per_page=12`;
     apiUrl += `&client_id=${accessKey}`;
 
-    console.log(apiUrl);
+    // console.log(apiUrl);
 
     fetch(apiUrl)
       .then((res) => res.json())
@@ -82,7 +82,7 @@ const InfiniteImageGallery = () => {
     <div className={css.wrapper}>
       <h1 className={css.h1}>Unsplash Image Gallery!</h1>
 
-      <form onSubmit={searchPhotos}>
+      <form onSubmit={searchPhotos} className={css.form}>
         <input
           className={css.input}
           type="text"
