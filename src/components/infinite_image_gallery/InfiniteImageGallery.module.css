@@ -88,11 +88,7 @@
   transition-duration: 0.1s;
 }
 
-/*
-.image_grid:hover {
-    grid-gap: 20px;
-}
-*/
+/*.image_grid:hover { grid-gap: 20px; }*/
 
 .wrapper .image {
   background: #d7d7d7;
@@ -207,16 +203,15 @@
     width: 25vmax;
   }
 
-  .wrapper .image img {
-  }
+  /* .wrapper .image img { } */
 
   .wrapper .form .input {
     margin: 0;
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: -3px;
-    min-width: 100px;
-    max-width: 130px;
+    min-width: 11vmax;
+    max-width: 14vmax;
     padding: 5px;
     font-size: 1.5vmax;
     text-align: center;
