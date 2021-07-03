@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import bgimage from "./calendar.png";
 
 export const StyledWrapper = styled.div`
   display: flex;
@@ -15,7 +16,8 @@ export const StyledWrapper = styled.div`
 
   &:hover {
     background-color: rgba(200, 200, 200, 0.2);
-    background-image: url("https://webstockreview.net/images/dot-clipart-dot-pattern-4.png");
+    /* background-image: url("https://webstockreview.net/images/dot-clipart-dot-pattern-4.png"); */
+    background-image: url(${bgimage});
   }
 
   @media (max-width: 900px) {
@@ -25,6 +27,11 @@ export const StyledWrapper = styled.div`
     border-radius: 10px;
     transition-duration: 0.7s;
     text-align: center;
+
+    &:hover {
+      background-color: rgba(200, 200, 200, 0);
+      background-image: url("");
+    }
   }
 `;
 
@@ -95,7 +102,8 @@ export const StyledDateChooserButton = styled.button`
 
 export const StyledCalendar = styled.div`
   font-family: arial;
-  max-width: 430px;
+  /* min-width: 430px; */
+  /* max-width: 430px; */
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);

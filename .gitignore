@@ -30,3 +30,4 @@ yarn-error.log*
 
 #files
 src/bgc_images_url.css
+src/img_extra/

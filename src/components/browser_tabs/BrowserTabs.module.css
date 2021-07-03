@@ -1,132 +1,135 @@
 .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    min-width: 65vmax;
-    padding: 5vmax;
-    border-radius: 10px;
-    transition-duration: 0.7s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 65vmax;
+  padding: 5vmax;
+  border-radius: 10px;
+  transition-duration: 0.7s;
 }
 
 .wrapper:hover {
-    background-color: #312a34;
-    background-image: url("https://www.pngarts.com/files/1/Abstract-PNG-Free-Download.png");
+  background-color: #312a34;
+  /* background-image: url("https://www.pngarts.com/files/1/Abstract-PNG-Free-Download.png"); */
+  background-image: url("./browser.png");
 }
 
 .browser {
-    display: flex;
-    flex-direction: column;
-    background: #ffb91f;
-    border-radius: 5px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    min-width: 60%;
-    min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffb91f;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  min-width: 60%;
+  min-height: 50vh;
 }
 
 .tabs {
-    flex-shrink: 1;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    padding-top: 10px;
+  flex-shrink: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  padding-top: 10px;
 }
 
 .tab {
-    position: relative;
-    background: #6e45df;
-    min-width: 1vmax;
-    font-size: 1.3vmax;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    transition: 0.3s ease all;
-    overflow: hidden;
-    cursor: pointer;
+  position: relative;
+  background: #6e45df;
+  min-width: 1vmax;
+  font-size: 1.3vmax;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: 0.3s ease all;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .tab a {
-    display: block;
-    padding: 12px 25px;
-    color: #e1daf5;
-    text-decoration: none;
+  display: block;
+  padding: 12px 25px;
+  color: #e1daf5;
+  text-decoration: none;
 }
 
 .tab a.isActive {
-    background: #5131a9;
-    color: #eee;
+  background: #5131a9;
+  color: #eee;
 }
 
 .address-bar {
-    background: #5533b3;
-    padding: 8px;
+  background: #5533b3;
+  padding: 8px;
 }
 
 .address-bar input {
-    background: #3a2081;
-    color: #eee;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 8px 20px;
-    font-size: 1vmax;
+  background: #3a2081;
+  color: #eee;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 8px 20px;
+  font-size: 1vmax;
 }
 
 .viewport {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #5131a9;
-    color: #dacff7;
-    font-size: 2vmax;
-    flex: 1;
-    padding: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5131a9;
+  color: #dacff7;
+  font-size: 2vmax;
+  flex: 1;
+  padding: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .highlight {
-    display: block;
-    position: absolute;
-    height: 70px;
-    width: 150px;
-    top: -10px;
-    left: -100px;
-    border-radius: 50%;
-    opacity: 0.5;
-    pointer-events: none;
-    background: radial-gradient(
-            rgb(231, 201, 174),
-            rgba(123, 123, 123, 0)
-    );
-    transition: 0.3s ease all;
+  display: block;
+  position: absolute;
+  height: 70px;
+  width: 150px;
+  top: -10px;
+  left: -100px;
+  border-radius: 50%;
+  opacity: 0.5;
+  pointer-events: none;
+  background: radial-gradient(rgb(231, 201, 174), rgba(123, 123, 123, 0));
+  transition: 0.3s ease all;
 }
 
 @media (max-width: 1280px) {
-    .wrapper {
-        min-width: 35vmax;
-        padding: 0;
-    }
+  .wrapper {
+    min-width: 35vmax;
+    padding: 0;
+  }
 
-    .tab a {
-        padding: 10px 15px;
-    }
+  .tab a {
+    padding: 10px 15px;
+  }
 }
 
 @media (max-width: 1000px) {
-    .wrapper {
-        min-width: 30vmax;
-        padding: 0;
-    }
+  .wrapper {
+    min-width: 30vmax;
+    padding: 0;
+  }
 
-    .tab a {
-        padding: 5px 7px;
-    }
+  .tab a {
+    padding: 5px 7px;
+  }
 }
 
 @media (max-width: 800px) {
-    .wrapper {
-        min-width: 25vmax;
-        padding: 0;
-    }
+  .wrapper {
+    min-width: 25vmax;
+    padding: 0;
+  }
+
+  .wrapper:hover {
+    background-color: rgba(48, 41, 51, 0);
+    background-image: url("");
+  }
 }

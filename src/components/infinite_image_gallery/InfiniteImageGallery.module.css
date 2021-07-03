@@ -16,7 +16,8 @@
 
 .wrapper:hover {
   background-color: rgba(101, 0, 255, 0.25);
-  background-image: url("https://www.pngarts.com/files/2/Grey-Abstract-Lines-Transparent.png");
+  /* background-image: url("https://www.pngarts.com/files/2/Grey-Abstract-Lines-Transparent.png"); */
+  background-image: url("./infinite.png");
 }
 
 .errorUnsplash {
@@ -187,10 +188,15 @@
 
 @media (max-width: 900px) {
   .wrapper {
-    min-width: 200px;
-    max-width: 250px;
+    min-width: 26vmax;
+    max-width: 30vmax;
     padding: 1px;
     margin: 0;
+  }
+
+  .wrapper:hover {
+    background-color: rgba(101, 0, 255, 0);
+    background-image: url("");
   }
 
   .wrapper .image_grid {
@@ -201,6 +207,7 @@
   .wrapper .image {
     height: 15vmax;
     width: 25vmax;
+    margin: 0 auto;
   }
 
   /* .wrapper .image img { } */

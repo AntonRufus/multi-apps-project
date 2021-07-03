@@ -14,7 +14,8 @@
 
 .wrapper:hover {
   background-color: rgba(0, 255, 255, 0.2);
-  background-image: url("https://www.pngarts.com/files/2/Black-Abstract-Lines-PNG-Image-Background.png");
+  /* background-image: url("https://www.pngarts.com/files/2/Black-Abstract-Lines-PNG-Image-Background.png"); */
+  background-image: url("./speech.png");
 }
 
 .wrapper h2 {
@@ -112,6 +113,11 @@
   .wrapper {
     padding: 0.5vmax 0.5vmax;
     min-width: 20vmax;
+  }
+
+  .wrapper:hover {
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url("");
   }
 
   input.number {

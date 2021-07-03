@@ -13,7 +13,8 @@
 
 .wrapper:hover {
   background-color: #1f403d;
-  background-image: url("https://www.pngarts.com/files/4/Dot-PNG-Image-Transparent.png");
+  /* background-image: url("https://www.pngarts.com/files/4/Dot-PNG-Image-Transparent.png"); */
+  background-image: url("./timer.png");
 }
 
 h2 {
@@ -120,6 +121,11 @@ h2 {
     min-width: 25vmax;
     min-height: 45vh;
     padding: 0;
+  }
+
+  .wrapper:hover {
+    background-color: rgba(31, 64, 61, 0);
+    background-image: url("");
   }
 
   .timer {

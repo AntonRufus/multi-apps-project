@@ -1,193 +1,203 @@
 .wrapper {
-    font-size: 100%;
-    color: wheat;
-    padding: 4vmax;
-    min-height: 100vh;
-    min-width: 65vmax;
-    border-radius: 10px;
-    transition-duration: 0.7s;
-    margin-left: 1vmax;
+  font-size: 100%;
+  color: wheat;
+  padding: 4vmax;
+  min-height: 100vh;
+  min-width: 65vmax;
+  border-radius: 10px;
+  transition-duration: 0.7s;
+  margin-left: 1vmax;
 }
 
 .wrapper:hover {
-    background-color: #36342c;
-    background-image: url("https://www.onlygfx.com/wp-content/uploads/2018/07/8-grunge-circle-dot-8.png");
+  background-color: #36342c;
+  /* background-image: url("https://www.onlygfx.com/wp-content/uploads/2018/07/8-grunge-circle-dot-8.png"); */
+  background-image: url("./markdown.png");
 }
 
 .instructions {
-    font-size: 1vmax;
-    color: #fff200;
-    transition-duration: 0.2s;
+  font-size: 1vmax;
+  color: #fff200;
+  transition-duration: 0.2s;
 }
 
 .instructions:hover {
-    color: gold;
-    font-weight: bold;
+  color: gold;
+  font-weight: bold;
 }
 
 textarea {
-    height: 35vmax;
-    width: 30vmax;
-    background: #eff1f5;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    padding: 20px;
+  height: 35vmax;
+  width: 30vmax;
+  background: #eff1f5;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .preview {
-    margin-left: 2vmax;
-    display: inline-block;
-    float: right;
-    padding-right: 222px;
-    padding-top: 15px;
-    max-width: 30vmax;
+  margin-left: 2vmax;
+  display: inline-block;
+  float: right;
+  padding-right: 222px;
+  padding-top: 15px;
+  max-width: 30vmax;
 }
 
 blockquote {
-    background: #444d58;
-    border-radius: 5px;
-    border-left: 3px solid #2db6f6;
-    font-weight: bold;
-    padding: 0 10px;
-    text-decoration: underline;
-    max-width: 40vmax;
+  background: #444d58;
+  border-radius: 5px;
+  border-left: 3px solid #2db6f6;
+  font-weight: bold;
+  padding: 0 10px;
+  text-decoration: underline;
+  max-width: 40vmax;
 }
 
 ul li {
-    background: #313438;
-    border-left: 3px solid #ce16f8;
-    border-radius: 5px;
-    padding: 7px 10px;
-    min-width: 5px;
-    max-width: 40vmax;
+  background: #313438;
+  border-left: 3px solid #ce16f8;
+  border-radius: 5px;
+  padding: 7px 10px;
+  min-width: 5px;
+  max-width: 40vmax;
 }
 
 @media (max-width: 1600px) {
-    .wrapper {
-        padding-top: 16vmax;
-    }
+  .wrapper {
+    padding-top: 16vmax;
+  }
 }
 
 @media (max-width: 1450px) {
-    .preview {
-        padding-right: 122px;
-    }
+  .preview {
+    padding-right: 122px;
+  }
 
-    .wrapper {
-        padding-top: 15vmax;
-    }
+  .wrapper {
+    padding-top: 15vmax;
+  }
 }
 
 @media (max-width: 1250px) {
-    .wrapper {
-        padding: 3vmax;
-        padding-top: 5vmax;
-        min-width: 35vmax;
-        min-height: 65vh;
-        margin-left: 1vmax;
-    }
+  .wrapper {
+    padding: 3vmax;
+    padding-top: 5vmax;
+    min-width: 35vmax;
+    min-height: 65vh;
+    margin-left: 1vmax;
+  }
 
-    .preview {
-        padding-right: 22px;
-    }
+  .preview {
+    padding-right: 22px;
+  }
 
-    .preview h1 {
-        font-size: 2vmax;
-    }
+  .preview h1 {
+    font-size: 2vmax;
+  }
 
-    textarea {
-        font-size: 2vmax;
-        width: 15vmax;
-        margin-top: 15px;
-    }
+  textarea {
+    font-size: 2vmax;
+    width: 15vmax;
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 1000px) {
-    .wrapper {
-        padding: 2vmax;
-        padding-top: 1vmax;
-        min-width: 30vmax;
-        min-height: 45vh;
-        margin-left: 1vmax;
-    }
+  .wrapper {
+    padding: 2vmax;
+    padding-top: 1vmax;
+    min-width: 30vmax;
+    min-height: 45vh;
+    margin-left: 1vmax;
+  }
 
-    .preview {
-        padding-left: 0;
-        margin-left: 5px;
-    }
+  .preview {
+    padding-left: 0;
+    margin-left: 5px;
+  }
 
-    textarea {
-        font-size: 1.5vmax;
-        width: 15vmax;
-        padding: 5px;
-    }
+  textarea {
+    font-size: 1.5vmax;
+    width: 15vmax;
+    padding: 5px;
+  }
 
-    .instructions {
-        font-size: 0.5vmax;
-    }
+  .instructions {
+    font-size: 0.5vmax;
+  }
 
-    .preview h1 {
-        padding-left: 2px;
-        padding-right: 0;
-        font-size: 1.5vmax;
-    }
+  .preview h1 {
+    padding-left: 2px;
+    padding-right: 0;
+    font-size: 1.5vmax;
+  }
 }
 
 @media (max-width: 800px) {
-    .wrapper {
-        padding: 1vmax;
-    }
+  .wrapper {
+    padding: 1vmax;
+  }
+
+  .wrapper:hover {
+    background-color: rgba(54, 52, 44, 0);
+    background-image: url("");
+  }
+
+  .instructions:hover {
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 600px) {
-    .wrapper {
-        padding: 0.5vmax;
-        min-width: 25vmax;
-        max-width: 29vmax;
-    }
+  .wrapper {
+    padding: 0.5vmax;
+    min-width: 25vmax;
+    max-width: 29vmax;
+  }
 
-    .preview {
-        padding-left: 0;
-        margin-left: 2px;
-        font-size: 1.3vmax;
-    }
+  .preview {
+    padding-left: 0;
+    margin-left: 2px;
+    font-size: 1.3vmax;
+  }
 
-    textarea {
-        font-size: 1.3vmax;
-        width: 28vmax;
-        padding: 5px;
-        height: 20vmax;
-    }
+  textarea {
+    font-size: 1.3vmax;
+    width: 28vmax;
+    padding: 5px;
+    height: 20vmax;
+  }
 
-    .preview {
-        float: left;
-    }
+  .preview {
+    float: left;
+  }
 
-    .preview h1 {
-        padding-left: 5px;
-        padding-right: 0;
-        font-size: 1.3vmax;
-    }
+  .preview h1 {
+    padding-left: 5px;
+    padding-right: 0;
+    font-size: 1.3vmax;
+  }
 
-    blockquote {
-        padding: 3px 5px;
-        margin-left: 15px;
-        max-width: 40vmax;
-    }
+  blockquote {
+    padding: 3px 5px;
+    margin-left: 15px;
+    max-width: 40vmax;
+  }
 
-    blockquote p {
-        max-width: 40vmax;
-    }
+  blockquote p {
+    max-width: 40vmax;
+  }
 
-    ul {
-        padding-left: 15px;
-    }
+  ul {
+    padding-left: 15px;
+  }
 
-    ul li {
-        padding: 3px 5px;
-        min-width: 5px;
-        max-width: 30vmax;
-    }
+  ul li {
+    padding: 3px 5px;
+    min-width: 5px;
+    max-width: 30vmax;
+  }
 }

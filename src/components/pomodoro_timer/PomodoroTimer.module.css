@@ -1,102 +1,108 @@
 .wrapper {
-    padding: 12vmax;
-    min-height: 100vh;
-    min-width: 65vmax;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #ce7e15;
-    border-radius: 10px;
-    transition-duration: 0.7s;
+  padding: 12vmax;
+  min-height: 100vh;
+  min-width: 65vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ce7e15;
+  border-radius: 10px;
+  transition-duration: 0.7s;
 }
 
 .wrapper:hover {
-    background-color: #25524d;
-    background-image: url("https://www.onlygfx.com/wp-content/uploads/2019/05/12-grunge-double-circle-1.png");
+  background-color: #25524d;
+  /* background-image: url("https://www.onlygfx.com/wp-content/uploads/2019/05/12-grunge-double-circle-1.png"); */
+  background-image: url("./pomodoro.png");
 }
 
 .wrapper h2 {
-    color: #33c799;
-    font-size: 3vmax;
-    text-align: center;
-    margin: 0;
+  color: #33c799;
+  font-size: 3vmax;
+  text-align: center;
+  margin: 0;
 }
 
 .input {
-    height: 3vmax;
+  height: 3vmax;
 }
 
 .input input {
-    background-color: #acacac;
-    border: 2px solid #ebebeb;
-    border-radius: 5px;
-    padding-left: 5px;
+  background-color: #acacac;
+  border: 2px solid #ebebeb;
+  border-radius: 5px;
+  padding-left: 5px;
 }
 
 .timer {
-    margin: 5vmax;
-    padding: 0;
-    color: #3eadce;
-    font-size: 9vmax;
+  margin: 5vmax;
+  padding: 0;
+  color: #3eadce;
+  font-size: 9vmax;
 }
 
 .buttons button {
-    margin: 1vmax;
-    outline: none;
-    border: none;
-    font-size: 1.5vmax;
-    background: #f7fca0;
-    color: #878b32;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    padding: 15px 30px;
-    cursor: pointer;
-    transition: 0.3s ease all;
+  margin: 1vmax;
+  outline: none;
+  border: none;
+  font-size: 1.5vmax;
+  background: #f7fca0;
+  color: #878b32;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.3s ease all;
 }
 
 .buttons button:hover {
-    border-radius: 10px;
-    background: #f5f8ca;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
+  border-radius: 10px;
+  background: #f5f8ca;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
 .buttons button:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 @media (max-width: 1000px) {
-    .wrapper {
-        margin: 1vmax;
-        min-width: 35vmax;
-        min-height: 65vh;
-        padding: 0;
-    }
+  .wrapper {
+    margin: 1vmax;
+    min-width: 35vmax;
+    min-height: 65vh;
+    padding: 0;
+  }
 }
 
 @media (max-width: 800px) {
-    .wrapper {
-        margin: 1vmax;
-        min-width: 25vmax;
-        min-height: 45vh;
-        padding: 0;
-    }
+  .wrapper {
+    margin: 1vmax;
+    min-width: 25vmax;
+    min-height: 45vh;
+    padding: 0;
+  }
 
-    .wrapper h2 {
-        font-size: 2vmax;
-    }
+  .wrapper:hover {
+    background-color: rgba(37, 82, 77, 0.5);
+    background-image: url("");
+  }
 
-    .timer {
-        margin: 4vmax;
-        padding: 0;
-        color: #3eadce;
-        font-size: 6vmax;
-    }
+  .wrapper h2 {
+    font-size: 2vmax;
+  }
 
-    .buttons button {
-        margin: 1vmax;
-        font-size: 2vmax;
-        padding: 10px 20px;
-    }
+  .timer {
+    margin: 4vmax;
+    padding: 0;
+    color: #3eadce;
+    font-size: 6vmax;
+  }
+
+  .buttons button {
+    margin: 1vmax;
+    font-size: 2vmax;
+    padding: 10px 20px;
+  }
 }
