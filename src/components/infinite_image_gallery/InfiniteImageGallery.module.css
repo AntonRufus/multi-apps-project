@@ -16,7 +16,7 @@
 
 .wrapper:hover {
   background-color: rgba(101, 0, 255, 0.25);
-  background-image: url("https://pnommensen.com/images/black-dots-png-19.png");
+  background-image: url("https://www.pngarts.com/files/2/Grey-Abstract-Lines-Transparent.png");
 }
 
 .errorUnsplash {
@@ -80,6 +80,7 @@
 }
 
 .wrapper .image_grid {
+  margin-top: 3px;
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -212,7 +213,10 @@
   .wrapper .form .input {
     margin: 0;
     margin-bottom: 10px;
-    min-width: 200px;
+    margin-right: 10px;
+    margin-left: -3px;
+    min-width: 100px;
+    max-width: 130px;
     padding: 5px;
     font-size: 1.5vmax;
     text-align: center;
